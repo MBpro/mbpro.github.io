@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAIN</title>
+    <link rel="preload" href="fonts/GUERRILLA-Normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RoughDraftCY-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="menu menu--header">
+            <img class="menu__logo" src="img/logo.png" alt="BRAIN" width="56" height="56"
+                srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+            <div class="menu__scroll">
+                <ul class="menu__list menu__list--header">
+                    <li class="menu__item menu__item--header">
+                        <a class="menu__link menu__link--header" href="#about">О нас</a>
+                    </li>
+                    <li class="menu__item menu__item--header">
+                        <a class="menu__link menu__link--header" href="#our-working">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item menu__item--header">
+                        <a class="menu__link menu__link--header" href="#courses">Курсы</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-list social-list--header">
+                <li class="social-list__item social-list__item--header">
+                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в ютуб">
+                        <img src="img/youtube.svg" alt="youtube" width="40" height="40">
+                    </a>
+                </li>
+                <li class="social-list__item social-list__item--header">
+                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в вк">
+                        <img src="img/vk.svg" alt="vk" width="40" height="40">
+                    </a>
+                </li>
+                <li class="social-list__item social-list__item--header">
+                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в инстаграм">
+                        <img src="img/insta.svg" alt="instagram" width="40" height="40">
+                    </a>
+                </li>
+            </ul>
+            <button class="button-burger" id="burger" aria-label="Кнопка открытия меню бургер">
+                <span class="button-burger__span"></span>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="greeting">
+            <div class="greting__content">
+                <h1 class="greeting__title">Знания по любви</h1>
+                <p class="greeting__text">Гарантируем результат<br> или вернем деньги</p>
+                <ul class="greeting__list">
+                    <li class="greeting__item"><a class="greeting__link greeting__link--sign-up modal-show"
+                            href="#">Записаться</a>
+                    </li>
+                    <li class="greeting__item"><a class="greeting__link modal-show" href="#">Бесплатное занятие</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="about">
+            <div class="anchor-link anchor-link--about" id="about"></div>
+            <h2 class="about__title">О нас</h2>
+            <article class="about__teacher about__teacher--anastasia">
+                <div class="about__wrapper">
+                    <h3 class="about__name">Дементьева Анастасия Борисовна</h3>
+                    <p class="about_function">Основатель онлайн школы</p>
+                    <ul class="about__list about__list--anastasia">
+                        <li class="about__item about__item--teacher about__item--medal-icon">сдала ЕГЭ на 90+</li>
+                        <li class="about__item about__item--teacher about__item--cup-icon">преподаватель<br> 1 категории
+                        </li>
+                        <li class="about__item about__item--teacher about__item--like-icon">разработчик
+                            авторских<br> программ</li>
+                    </ul>
+                    <picture class="about__picture about__picture--anastasia">
+                        <source type="image/webp" media="(min-width: 1920px)"
+                            srcset="img/anastasia/anastasia-mediaq-1920@1x.webp 1x, img/anastasia/anastasia-mediaq-1920@2x.webp 2x">
+
+                        <source type="image/webp" media="(min-width: 1000px)"
+                            srcset="img/anastasia/anastasia-mediaq-1000@1x.webp 1x, img/anastasia/anastasia-mediaq-1000@2x.webp 2x">
+
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/anastasia/anastasia-mediaq-768@1x.webp 1x,
+                    img/anastasia/anastasia-mediaq-768@2x.webp 2x">
+
+                        <source type="image/webp" media="(min-width: 480px)"
+                            srcset="img/anastasia/anastasia-mediaq-480@1x.webp 1x, img/anastasia/anastasia-mediaq-480@2x.webp 2x">
+
+                        <source type="image/webp" media="(max-width: 479px)"
+                            srcset="img/anastasia/anastasia-mediaq-320@1x.webp 1x, img/anastasia/anastasia-mediaq-320@2x.webp 2x">
+
+                        <source media="(min-width: 1920px)"
+                            srcset="img/anastasia/anastasia-mediaq-1920@1x.png 1x, img/anastasia/anastasia-mediaq-1920@2x.png 2x">
+
+                        <source media="(min-width: 1000px)"
+                            srcset="img/anastasia/anastasia-mediaq-1000@1x.png 1x, img/anastasia/anastasia-mediaq-1000@2x.png 2x">
+
+                        <source media="(min-width: 768px)"
+                            srcset="img/anastasia/anastasia-mediaq-768@1x.png 1x, img/anastasia/anastasia-mediaq-768@2x.png 2x">
+
+                        <source media="(min-width: 480px)"
+                            srcset="img/anastasia/anastasia-mediaq-480@1x.png 1x, img/anastasia/anastasia-mediaq-480@2x.png 2x">
+
+                        <img class="about__foto about__foto--tatiana"
+                            srcset="img/anastasia/anastasia-mediaq-320@2x.png 2x"
+                            src="img/anastasia/anastasia-mediaq-320@1x.png" alt="Фото учителя Татьяны">
+                    </picture>
+                </div>
+                <p class="about_comments about_comments--anastasia">«Brain — это образовательный центр, где каждый
+                    ученик
+                    может выбрать<br> комфортную для него форму обучения.<br> Наши наставники — это педагоги, которые не
+                    только хорошо
+                    знают свой <br>предмет, но и постоянно совершенствуют свои знания»</p>
+            </article>
+
+            <article class="about__teacher about__teacher--tatiana">
+                <div class="about__wrapper">
+                    <h3 class="about__name about__name--tatiana">Мирашевская Татьяна Сергеевна</h3>
+                    <p class="about_function about_function--tatiana">Куратор образовательного процесса</p>
+                    <ul class="about__list about__list--tatiana">
+                        <li class="about__item about__item--teacher about__item--guru-icon">гуру истории<br> и
+                            обществознания
+                        </li>
+                        <li class="about__item about__item--teacher about__item--rocket-icon">подберет оптимальную<br>
+                            программу
+                            обучения</li>
+                    </ul>
+                    <picture class="about__picture about__picture--tatiana">
+                        <source type="image/webp" media="(min-width: 1920px)"
+                            srcset="img/tatiana/tatiana-mediaq-1920@1x.webp 1x, img/tatiana/tatiana-mediaq-1920@2x.webp 2x">
+
+                        <source type="image/webp" media="(min-width: 1000px)"
+                            srcset="img/tatiana/tatiana-mediaq-1000@1x.webp 1x, img/tatiana/tatiana-mediaq-1000@2x.webp 2x">
+
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tatiana/tatiana-mediaq-768@1x.webp 1x,
+                         img/tatiana/tatiana-mediaq-768@2x.webp 2x">
+
+                        <source type="image/webp" media="(min-width: 480px)"
+                            srcset="img/tatiana/tatiana-mediaq-480@1x.webp 1x, img/tatiana/tatiana-mediaq-480@2x.webp 2x">
+
+                        <source type="image/webp" media="(max-width: 479px)"
+                            srcset="img/tatiana/tatiana-mediaq-320@1x.webp 1x, img/tatiana/tatiana-mediaq-320@2x.webp 2x">
+
+                        <source media="(min-width: 1920px)"
+                            srcset="img/tatiana/tatiana-mediaq-1920@1x.png 1x, img/tatiana/tatiana-mediaq-1920@2x.png 2x">
+
+                        <source media="(min-width: 1000px)"
+                            srcset="img/tatiana/tatiana-mediaq-1000@1x.png 1x, img/tatiana/tatiana-mediaq-1000@2x.png 2x">
+
+                        <source media="(min-width: 768px)"
+                            srcset="img/tatiana/tatiana-mediaq-768@1x.png 1x, img/tatiana/tatiana-mediaq-768@2x.png 2x">
+
+                        <source media="(min-width: 480px)"
+                            srcset="img/tatiana/tatiana-mediaq-480@1x.png 1x, img/tatiana/tatiana-mediaq-480@1x.png 2x">
+
+                        <img class="about__foto about__foto--tatiana" srcset="img/tatiana/tatiana-mediaq-320@2x.png 2x"
+                            src="img/tatiana/tatiana-mediaq-320@1x.png" alt="Фото учителя Татьяны">
+                    </picture>
+                </div>
+                <p class="about_comments about_comments--tatiana">
+                    «Кто сказал, что подготовка к экзаменам должна быть занудством?<br>
+                    Мы продумали процесс обучения так, чтобы ученикам было комфортно<br>
+                    и интересно получать знания»
+                </p>
+            </article>
+            <article class="about__statistics">
+                <h2 class="visually-hidden">Статические данные о учениках</h2>
+                <ul class="about__list about__list--statistics">
+                    <li class="about__item about__item--info about__item--performance">
+                        <p class="about__data">81+</p>
+                        <p class="about__description ">Средний балл<br>наших учеников</p>
+                    </li>
+                    <li class="about__item about__item--info about__item--percent">
+                        <p class="about__data">90%</p>
+                        <p class="about__description">Поступили в ВУЗ<br>на бюджет</p>
+                    </li>
+                    <li class="about__item about__item--info about__item--grade">
+                        <p class="about__data">4,7</p>
+                        <p class="about__description">Успеваемость наших<br>учеников в школе</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="our-working">
+            <div class="anchor-link anchor-link--our-working" id="our-working"></div>
+            <h2 class="our-working__title">Как мы работаем</h2>
+            <ul class="our-working__list">
+                <li class="our-working__item our-working__item--consultation">
+                    <p class="our-working__text">Консультация<br><span>и знакомство с куратором</span></p>
+                </li>
+                <li class="our-working__item our-working__item--enrollment">
+                    <p class="our-working__text">Оформление заказа<br> и зачисление</p>
+                </li>
+                <li class="our-working__item our-working__item--start">
+                    <p class="our-working__text">Начало<br> обучения</p>
+                </li>
+            </ul>
+        </section>
+        <section class="courses">
+            <div class="anchor-link anchor-link--courses" id="courses"></div>
+            <h2 class=" courses__title">Курсы</h2>
+            <div class="courses__content">
+                <article class="courses__atticle">
+                    <h3 class="courses__caption">Optimal</h3>
+                    <div class="courses__wrapper">
+                        <ul class="courses__list courses__list--price">
+                            <li class="courses__item courses__item--price">
+                                <p class="courses__text courses__text--old-price">3 800</p>
+                                <p class="courses__text courses__text--new-price">2 850</p>
+                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
+                            </li>
+                            <li class="courses__item courses__item--price">
+                                <p class="courses__text courses__text--old-price">34 000</p>
+                                <p class="courses__text courses__text--new-price">25 650</p>
+                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="courses__list courses__list--docket">
+                        <li class="courses__item courses__item--docket">4 занятие по 120 мин</li>
+                        <li class="courses__item courses__item--docket">связь с наставником 24/7</li>
+                        <li class="courses__item courses__item--docket">рабочая тетрадь</li>
+                        <li class="courses__item courses__item--docket">доступ в закрытый чат</li>
+                        <li class="courses__item courses__item--docket">разбор дз</li>
+                        <li class="courses__item courses__item--docket">авторская презентация</li>
+                        <li class="courses__item courses__item--docket">Большой вебинар</li>
+                    </ul>
+                    <a class="courses__link modal-show" href="#">Купить</a>
+                </article>
+                <article class="courses__atticle">
+                    <h3 class="courses__caption">Intensive</h3>
+                    <div class="courses__wrapper">
+                        <ul class="courses__list courses__list--price">
+                            <li class="courses__item courses__item--price">
+                                <p class="courses__text courses__text--old-price">5 600</p>
+                                <p class="courses__text courses__text--new-price">4 200</p>
+                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
+                            </li>
+                            <li class="courses__item courses__item--price">
+                                <p class="courses__text courses__text--old-price">50 000</p>
+                                <p class="courses__text courses__text--new-price">37 800</p>
+                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="courses__list courses__list--docket">
+                        <li class="courses__item courses__item--docket">4 занятие по 120 мин</li>
+                        <li class="courses__item courses__item--docket">связь с наставником 24/7</li>
+                        <li class="courses__item courses__item--docket">рабочая тетрадь</li>
+                        <li class="courses__item courses__item--docket">доступ в закрытый чат</li>
+                        <li class="courses__item courses__item--docket">разбор дз</li>
+                        <li class="courses__item courses__item--docket">авторская презентация</li>
+                        <li class="courses__item courses__item--docket">Большой вебинар</li>
+                    </ul>
+                    <a class="courses__link  modal-show" href="#">Купить</a>
+                </article>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2 class="reviews__title">Отзывы наших любимых учеников</h2>
+            <input id="btn-1" type="radio" class="reviews__input" name="f">
+            <input id="btn-2" type="radio" class="reviews__input" name="f" checked>
+            <input id="btn-3" type="radio" class="reviews__input" name="f">
+            <div class="slider-wrapp">
+                <div class="reviews__box reviews__box--noJS">
+                    <article class="reviews__item reviews__item--noJS" id="slider-1">
+                        <div class="reviews__content">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="img/comments/foto-olesia@1x.webp 1x, img/comments/foto-olesia@2x.webp 2x">
+                                <img src="img/comments/foto-olesia@1x.png" srcset="img/comments/foto-olesia@2x.png 2x"
+                                    alt="Фото ученика" width="65" height="65">
+                            </picture>
+                            <div class="rewiews__contener">
+                                <h3 class="reviews__caption">Олеся</h3>
+                                <div class="rewiews__stars">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Татьяна Сергеевна очень хорошо, понятно и доступно объясняет сложные
+                            вещи(такие, например, как 20
+                            век) и сейчас, благодаря курсам,я пишу пробники на высокие баллы. Мы быстро нашли общий язык
+                            и
+                            понимали друг друга с полуслова</p>
+                    </article>
+                    <article class="reviews__item reviews__item--noJS" id="slider-2">
+                        <div class="reviews__content">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="img/comments/foto-nadezhda@1x.webp 1x, img/comments/foto-nadezhda@2x.webp 2x">
+                                <img src="img/comments/foto-nadezhda@1x.png"
+                                    srcset="img/comments/foto-nadezhda@2x.png 2x" alt="Фото ученика" width="65"
+                                    height="65">
+                            </picture>
+                            <div class="rewiews__contener">
+                                <h3 class="reviews__caption">Надежда</h3>
+                                <div class="rewiews__stars">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Литература - это любовь! Анастасию Борисовну можно слушать часами, ее
+                            подача - высокий пилотаж. Я
+                            еще
+                            не встречала такого учителя по литературе, который рассказывает так много интересной,
+                            полезной
+                            информации. Анастасия Борисовна помогает по-другому смотреть на произведения! Очень рада,
+                            что
+                            занималась именно у этого преподавателя!</p>
+                    </article>
+                    <article class="reviews__item reviews__item--noJS" id="slider-3">
+                        <div class="reviews__content">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="img/comments/foto-artem@1x.webp 1x, img/comments/foto-artem@2x.webp 2x">
+                                <img src="img/comments/foto-artem@1x.png" srcset="img/comments/foto-artem@1x.png 2x"
+                                    alt="Фото ученика" width="65" height="65">
+                            </picture>
+                            <div class="rewiews__contener">
+                                <h3 class="reviews__caption">Артём</h3>
+                                <div class="rewiews__stars">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Проходил курсы по Профильной математике. Никогда не понимал, как можно
+                            запоминать такие сложные
+                            формулы....Но здесь мне объяснили материал доступно и понятно, разложили все по полочкам,
+                            показали
+                            лайфкахи и хитрости в вычислениях. Кураторы просто огонь, быстро нашли ко мне подход, тем
+                            самым,
+                            облегчили мне обучение!</p>
+                    </article>
+                </div>
+                <div class="reviews__controls" id="control">
+                    <label class="reviews__label" for="btn-1"></label>
+                    <label class="reviews__label" for="btn-2"></label>
+                    <label class="reviews__label" for="btn-3"></label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="menu main-footer__menu">
+            <h2 class="main-footer__title">Brain</h2>
+            <ul class="menu__list main-footer__list">
+                <li class="menu__item main-footer__item"><a class="menu__link main-footer__link" href="#about">О нас</a>
+                </li>
+                <li class="menu__item main-footer__item"><a class="menu__lin main-footer__link" href="#our-working">Как
+                        мы
+                        работаем</a></li>
+                <li class="menu__item main-footer__item"><a class="menu__link main-footer__link"
+                        href="#courses">Курсы</a></li>
+            </ul>
+            <ul class="social-list social-list--footer">
+                <li class="social-list__item social-list__item--footer">
+                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в ютуб">
+                        <img src="img/youtube.svg" alt="youtube" width="40" height="40">
+                    </a>
+                </li>
+                <li class="social-list__item social-list__item--footer">
+                    <a class=" social-list__link" href="#" target="_blank" aria-label="поделиться в вк">
+                        <img src="img/vk.svg" alt="vk" width="40" height="40">
+                    </a>
+                </li>
+                <li class="social-list__item social-list__item--footer">
+                    <a class=" social-list__link" href="#" target="_blank" aria-label="поделиться в инстаграм">
+                        <img src="img/insta.svg" alt="instagram" width="40" height="40">
+                    </a>
+                </li>
+            </ul>
+            <div class="social__contener">
+                <p class="social__text social__text--numer">ИП Дементьева Анастасия Борисовна<br> ИНН
+                    522802790515<br> ОГРНИП 320527500055460</p>
+                <p class="social__text social__text--copyright">COPYRIGHT © 2020 Brain</p>
+            </div>
+        </div>
+    </footer>
+    <article class="popup">
+        <div class="popup__inner">
+            <div class="popup__image">
+                <picture>
+                    <source type="image/webp"
+                        srcset="img/popup/teachers-popup@1x.webp 1x, img/popup/teachers-popup@2x.webp 2x">
+                    <img src="img/popup/teachers-popup@1x.png" srcset="img/popup/teachers-popup@2x.png 2x"
+                        alt="Фото учетелей" width="440" height="385">
+                </picture>
+            </div>
+            <div class="popup__content">
+                <h2 class="popup__title">Заполни заявку</h2>
+                <form class="popup__form">
+                    <div class="popup__contener">
+                        <input class="popup__input popup__input--name" type="text" placeholder="Имя">
+                        <input class="popup__input popup__input--subject" type="text" placeholder="Предмет">
+                    </div>
+                    <div class="popup__item">
+                        <input class="popup__input popup__input--phone" type="text" placeholder="Тел.">
+                    </div>
+                    <div class="popup__item">
+                        <input class="popup__input popup__input--email" type="text" placeholder="Email">
+                    </div>
+                    <div class="popup__item popup__item--checkbox">
+                        <label class="popup__label">
+                            <input class="popup__checkbox" type="checkbox">
+                            <span class="popup_span"></span>
+                            согласие на обработку персональных данных
+                        </label>
+                    </div>
+                    <button class="popup__button popup__button-submit" type="submit">Отправить</button>
+                    <button class="popup__button-close" type="button">
+                        <span class="visually-hidden">Закрыть форму</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </article>
+    <section class="successfully">
+        <h2 class="visually-hidden">Ваши данные успешно отправленные</h2>
+        <div class="successfully__content">
+            <img class="successfully__img" src="img/check.svg" alt="checked" width="123" height="100">
+            <p class="successfully__text">Мы свяжемся с тобой<br> в ближайшее время!</p>
+            <button class="successfully__button" type="button">Вернуться</button>
+        </div>
+    </section>
+    <div class="background-modal">
+    </div>
+    <script src="../js/script.min.js"></script>
+</body>
+
+</html>
