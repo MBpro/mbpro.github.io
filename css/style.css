@@ -943,15 +943,15 @@ body {
 }
 
 .our-working__item--consultation::before {
-  background-image: url("../../img/icon/consultation@1x.png");
+  background-image: url("../img/icon/consultation@1x.png");
 }
 
 .our-working__item--enrollment::before {
-  background-image: url("../../img/icon/enrollment@1x.png");
+  background-image: url("../img/icon/enrollment@1x.png");
 }
 
 .our-working__item--start::before {
-  background-image: url("../../img/icon/start@1x.png");
+  background-image: url("../img/icon/start@1x.png");
 }
 
 .our-working__item:not(:last-child) {
@@ -1036,20 +1036,6 @@ body {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   padding: 12px 0;
-}
-
-.courses__item--docket::before {
-  content: "";
-  position: absolute;
-  left: 13px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 25px;
-  height: 25px;
-  background-image: url(../img/icon/tick.svg);
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
 }
 
 .courses__item--docket:not(:last-child) {
@@ -1678,13 +1664,21 @@ body {
     margin: 0;
     width: 480px;
     height: 523px;
-    background-image: url("../img/greeting-mobile480-bg@1x.png");
+    background-image: url("../img/greeting-480-bg@1x.png");
     background-repeat: no-repeat;
     background-size: 480px 529px;
   }
 
   .greeting::after {
-    display: none;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 240px;
+    height: 376px;
+    background-image: url("../img/anastasia-480-bg@1x.png");
+    background-repeat: no-repeat;
+    background-size: 240px 376px;
   }
 
   .greeting__title {
@@ -1902,6 +1896,20 @@ body {
     text-align: left;
   }
 
+  .courses__item--docket::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icon/tick.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+  }
+
   .courses__item--docket:not(:last-child) {
     margin-bottom: 27px;
   }
@@ -1976,13 +1984,21 @@ body {
 
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 480px) and (min-resolution: 144dpi), (min-width: 480px) and (min-resolution: 1.5dppx) {
   .greeting::before {
-    background-image: url("../img/greeting-mobile480-bg@2x.png");
+    background-image: url("../img/greeting-480-bg@2x.png");
+  }
+
+  .greeting::after {
+    background-image: url("../img/anastasia-480-bg@2x.png");
   }
 }
 
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 4.041666666666667), (min-width: 480px) and (-o-min-device-pixel-ratio: 97/24), (min-width: 480px) and (min-resolution: 388dpi), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 480px) and (-o-min-device-pixel-ratio: 3/1), (min-width: 480px) and (min-resolution: 3dppx) {
   .greeting::before {
-    background-image: url("../img/greeting-mobile480-bg@3x.png");
+    background-image: url("../img/greeting-480-bg@3x.png");
+  }
+
+  .greeting::after {
+    background-image: url("../img/anastasia-480-bg@3x.png");
   }
 }
 
@@ -2035,8 +2051,6 @@ body {
   }
 
   .greeting::after {
-    top: auto;
-    bottom: 0;
     left: 0;
     right: auto;
     display: block;
@@ -3133,6 +3147,11 @@ body {
     display: none;
   }
 
+  .menu__scroll {
+    position: relative;
+    overflow: hidden;
+  }
+
   .menu__list--header {
     position: relative;
     z-index: 10;
@@ -3215,7 +3234,7 @@ body {
   }
 
   .js-menu__list {
-    position: absolute;
+    position: fixed;
     z-index: 2000;
     top: 56px;
     bottom: 0;
@@ -3235,7 +3254,6 @@ body {
   }
 
   .js-menu__list--active {
-    position: absolute;
     right: 0;
     -webkit-transition: right 1s ease 0s, -webkit-transform 0s ease 0s;
     transition: right 1s ease 0s, -webkit-transform 0s ease 0s;
@@ -3281,15 +3299,15 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .our-working__item--consultation::before {
-    background-image: url("../../img/icon/consultation@2x.png");
+    background-image: url("../img/icon/consultation@2x.png");
   }
 
   .our-working__item--enrollment::before {
-    background-image: url("../../img/icon/enrollment@2x.png");
+    background-image: url("../img/icon/enrollment@2x.png");
   }
 
   .our-working__item--start::before {
-    background-image: url("../../img/icon/start@2x.png");
+    background-image: url("../img/icon/start@2x.png");
   }
 }
 
@@ -3307,25 +3325,40 @@ body {
 
 .webp .about__item--rocket-icon::before{ background-image: url(../img/icon/rocket_icon@1x.webp); }
 
-.webp .our-working__item--consultation::before{ background-image: url(../../img/icon/consultation@1x.webp); }
+.webp .our-working__item--consultation::before{ background-image: url(../img/icon/consultation@1x.webp); }
 
-.webp .our-working__item--enrollment::before{ background-image: url(../../img/icon/enrollment@1x.webp); }
+.webp .our-working__item--enrollment::before{ background-image: url(../img/icon/enrollment@1x.webp); }
 
-.webp .our-working__item--start::before{ background-image: url(../../img/icon/start@1x.webp); }
+.webp .our-working__item--start::before{ background-image: url(../img/icon/start@1x.webp); }
 
 @media (min-width: 480px){
 
-  .webp .greeting::before{ background-image: url(../img/greeting-mobile480-bg@1x.webp); }
+  .webp .greeting::before{ background-image: url(../img/greeting-480-bg@1x.webp); }
+}
+
+@media (min-width: 480px){
+
+  .webp .greeting::after{ background-image: url(../img/anastasia-480-bg@1x.webp); }
 }
 
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 480px) and (min-resolution: 144dpi), (min-width: 480px) and (min-resolution: 1.5dppx){
 
-  .webp .greeting::before{ background-image: url(../img/greeting-mobile480-bg@2x.webp); }
+  .webp .greeting::before{ background-image: url(../img/greeting-480-bg@2x.webp); }
+}
+
+@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 480px) and (min-resolution: 144dpi), (min-width: 480px) and (min-resolution: 1.5dppx){
+
+  .webp .greeting::after{ background-image: url(../img/anastasia-480-bg@2x.webp); }
 }
 
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 4.041666666666667), (min-width: 480px) and (-o-min-device-pixel-ratio: 97/24), (min-width: 480px) and (min-resolution: 388dpi), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 480px) and (-o-min-device-pixel-ratio: 3/1), (min-width: 480px) and (min-resolution: 3dppx){
 
-  .webp .greeting::before{ background-image: url(../img/greeting-mobile480-bg@3x.webp); }
+  .webp .greeting::before{ background-image: url(../img/greeting-480-bg@3x.webp); }
+}
+
+@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 4.041666666666667), (min-width: 480px) and (-o-min-device-pixel-ratio: 97/24), (min-width: 480px) and (min-resolution: 388dpi), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 480px) and (-o-min-device-pixel-ratio: 3/1), (min-width: 480px) and (min-resolution: 3dppx){
+
+  .webp .greeting::after{ background-image: url(../img/anastasia-480-bg@3x.webp); }
 }
 
 @media (min-width: 768px){
@@ -3470,15 +3503,15 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
 
-  .webp .our-working__item--consultation::before{ background-image: url(../../img/icon/consultation@2x.webp); }
+  .webp .our-working__item--consultation::before{ background-image: url(../img/icon/consultation@2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
 
-  .webp .our-working__item--enrollment::before{ background-image: url(../../img/icon/enrollment@2x.webp); }
+  .webp .our-working__item--enrollment::before{ background-image: url(../img/icon/enrollment@2x.webp); }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
 
-  .webp .our-working__item--start::before{ background-image: url(../../img/icon/start@2x.webp); }
+  .webp .our-working__item--start::before{ background-image: url(../img/icon/start@2x.webp); }
 }

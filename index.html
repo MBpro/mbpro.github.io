@@ -14,8 +14,11 @@
 <body>
     <header class="main-header">
         <nav class="menu menu--header">
-            <img class="menu__logo" src="img/logo.png" alt="BRAIN" width="56" height="56"
-                srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+            <picture class="menu__logo">
+                <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+                <img src="img/comments/foto-artem@1x.png" srcset="img/comments/foto-artem@1x.png 2x" alt="Фото ученика"
+                    width="56" height="56">
+            </picture>
             <div class="menu__scroll">
                 <ul class="menu__list menu__list--header">
                     <li class="menu__item menu__item--header">

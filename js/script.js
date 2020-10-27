@@ -115,6 +115,7 @@ let returnToHomePage = function () {
     }
 };
 
+
 window.addEventListener('keydown', function (event) { //close modal cart button "escape"
     if (event.key === 'Escape') {
         if (popup.classList.contains('js-popup') === true) {
