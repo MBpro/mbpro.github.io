@@ -875,10 +875,6 @@ body {
   margin-bottom: 15px;
 }
 
-.about__foto {
-  display: block;
-}
-
 .about_comments {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1774,6 +1770,7 @@ body {
 
   .about__picture--anastasia {
     position: absolute;
+    max-width: 100%;
     z-index: 1;
     bottom: 0;
     right: -120px;
@@ -1784,6 +1781,14 @@ body {
     z-index: 1;
     bottom: 0px;
     left: -142px;
+  }
+
+  .about__foto--anastasia {
+    width: 480px;
+  }
+
+  .about__foto--tatiana {
+    width: 463px;
   }
 
   .about_comments {
@@ -2213,6 +2218,14 @@ body {
 
   .about__picture--tatiana {
     left: -212px;
+  }
+
+  .about__foto--anastasia {
+    width: 640px;
+  }
+
+  .about__foto--tatiana {
+    width: 600px;
   }
 
   .about_comments {
@@ -2651,6 +2664,14 @@ body {
     left: -175px;
   }
 
+  .about__foto--anastasia {
+    width: 700px;
+  }
+
+  .about__foto--tatiana {
+    width: 700px;
+  }
+
   .about_comments {
     padding: 33px;
     font-size: 20px;
@@ -2947,6 +2968,14 @@ body {
     background-image: url("../img/bg/teacher-tatiana-bg@1x.png");
     background-repeat: no-repeat;
     background-size: 547px 423px;
+  }
+
+  .about__foto--anastasia {
+    width: 861px;
+  }
+
+  .about__foto--tatiana {
+    width: 861px;
   }
 
   .about_comments {
