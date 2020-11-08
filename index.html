@@ -1558,7 +1558,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="css/style.min.css">
+
     <script async src="../js/script.min.js"></script>
 </head>
 
@@ -1998,6 +1998,13 @@
     </section>
     <div class="background-modal">
     </div>
+    <script type="text/javascript">
+        let head = document.head;
+        let link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = '{{css/style.min.css}}';
+        head.appendChild(link);
+    </script>
 </body>
 
 </html>
