@@ -3181,6 +3181,7 @@ body {
   }
 
   .menu__scroll {
+    display: block;
     position: relative;
     overflow: hidden;
   }
