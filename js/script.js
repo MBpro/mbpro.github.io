@@ -17,7 +17,7 @@ testWebP(function (support) {
     }
 });;
 let onJSmenu = document.querySelector('#burger');
-onJSmenu.classList.add('js-button-burger');
+onJSmenu.classList.remove('button-burger', 'button-burger--ofJS');
 
 let hiddenMenuOnJs = document.querySelector('.menu__list--header');
 hiddenMenuOnJs.classList.add('js-menu__list');

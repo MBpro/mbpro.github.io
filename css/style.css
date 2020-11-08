@@ -545,7 +545,7 @@ body {
   overflow: hidden;
 }
 
-.button-burger {
+.button-burger.button-burger--ofJS {
   display: none;
 }
 
@@ -2520,6 +2520,10 @@ body {
     background-color: #ffffff;
   }
 
+  .button-burger--onJS {
+    display: none;
+  }
+
   .menu--header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3107,7 +3111,7 @@ body {
     background-color: #ffffff;
   }
 
-  .js-button-burger {
+  .button-burger--onJS {
     position: absolute;
     top: 0;
     right: 0;
@@ -3121,7 +3125,7 @@ body {
     cursor: pointer;
   }
 
-  .js-button-burger::before {
+  .button-burger--onJS::before {
     content: "";
     position: absolute;
     left: 12px;
@@ -3134,7 +3138,7 @@ body {
     transition: all 0.3s ease 0s;
   }
 
-  .js-button-burger::after {
+  .button-burger--onJS::after {
     content: "";
     position: absolute;
     left: 32px;
@@ -3147,7 +3151,7 @@ body {
     transition: all 0.3s ease 0s;
   }
 
-  .js-button-burger.js-button-burger--active::before {
+  .button-burger--onJS.js-button-burger--active::before {
     content: "";
     top: 25px;
     left: 14px;
@@ -3159,7 +3163,7 @@ body {
     transition: all 0.3s ease 0s;
   }
 
-  .js-button-burger.js-button-burger--active::after {
+  .button-burger--onJS.js-button-burger--active::after {
     content: "";
     top: 25px;
     left: 14px;
@@ -3172,7 +3176,7 @@ body {
     transition: all 0.3s ease 0s;
   }
 
-  .js-button-burger.js-button-burger--active .js-button-burger__span--active {
+  .button-burger--onJS.js-button-burger--active .js-button-burger__span--active {
     display: none;
   }
 
