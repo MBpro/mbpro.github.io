@@ -10,10 +10,10 @@ function testWebP(callback) {
 
 testWebP(function (support) {
 
-    if (support == true) {
-        document.querySelector('body').classList.add('webp');
-    } else {
+    if (support == false) {
+        document.querySelector('body').classList.remove('webp');
         document.querySelector('body').classList.add('no-webp');
+        return
     }
 });;
 let onJSmenu = document.querySelector('#burger');
