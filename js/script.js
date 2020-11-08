@@ -1,21 +1,22 @@
 
-function testWebP(callback) {
-
+function checkWebP(callback) {
     var webP = new Image();
     webP.onload = webP.onerror = function () {
         callback(webP.height == 2);
     };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-}
+    webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+};
 
-testWebP(function (support) {
-
-    if (support == false) {
-        document.querySelector('body').classList.remove('webp');
-        document.querySelector('body').classList.add('no-webp');
-        return
+checkWebP(function (support) {
+    if (support) {
+        //Do what you whant =)
+        console.log('work webp');
+    } else {
+        //Do what you whant =)
+        console.log('not work, use jgp/png')
     }
-});;
+
+});
 let onJSmenu = document.querySelector('#burger');
 onJSmenu.classList.remove('button-burger', 'button-burger--ofJS');
 
