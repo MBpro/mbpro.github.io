@@ -1656,6 +1656,12 @@
                 aria-label="Кнопка открытия меню бургер">
                 <span class="button-burger__span"></span>
             </button>
+                 <script type="text/javascript">
+                    let onJSmenu = document.querySelector('#burger');
+                    onJSmenu.classList.remove('button-burger', 'button-burger--ofJS');
+                    let hiddenMenuOnJs = document.querySelector('.menu__list--header');
+                    hiddenMenuOnJs.classList.add('js-menu__list');
+                </script>
         </nav>
     </header>
     <main class="main">
