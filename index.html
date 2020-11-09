@@ -2049,14 +2049,24 @@
     </section>
     <div class="background-modal">
     </div>
-
+<!--
     <script type="text/javascript">
         let head = document.head;
         let link = document.createElement('link');
         link.rel = "stylesheet";
         link.href = 'css/style.min.css';
         head.appendChild(link);
-    </script>
+    </script>-->
+
+<script>
+    function asyncCSS(href) {
+        var css = document.createElement('link');
+        css.rel = "stylesheet";
+        css.href = href;
+        document.head.appendChild(css);
+    }
+    asyncCSS('css/style.min.css');
+</script>
 </body>
 
 </html>
