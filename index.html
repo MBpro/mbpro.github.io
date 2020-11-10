@@ -1610,7 +1610,6 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="webp">
@@ -2064,17 +2063,18 @@
         link.href = 'css/style.min.css';
         head.appendChild(link);
     </script>
+       <script async src="../js/script.min.js"></script>-->
 
-<script>
-    function asyncCSS(href) {
-        var css = document.createElement('link');
-        css.rel = "stylesheet";
-        css.href = href;
-        document.head.appendChild(css);
-    }
-    asyncCSS('css/style.min.css');
-</script>
-    <script async src="../js/script.min.js"></script>-->
+    <script>
+        function asyncCSS(href) {
+            var css = document.createElement('link');
+            css.rel = "stylesheet";
+            css.href = href;
+            document.head.appendChild(css);
+        }
+        asyncCSS('css/style.min.css');
+    </script>
+
 </body>
 
 </html>
