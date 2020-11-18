@@ -542,20 +542,20 @@
     </script>
       <script type="text/javascript">
         function cssTimeOutConected(){
-            let style = document.style;
+            let head = document.head;
             let link = document.createElement('link');
             link.rel = "stylesheet";
             link.href = "css/swiper-bundle.min.css";
-            style.before(link);
+            head.prepend(link);
         }
         
         function jsTimeOutConected(){
-            let body = document.body;
+            let element = document.querySelectorAll('script:last-child');
             let script = document.createElement('script');
             script.type = "text/javascript";
             script.src= "js/swiper-bundle.min.js";
             script.async = "async";
-            body.append(script);
+            body.before(script);
         }
         setTimeout(cssTimeOutConected, 2000);
         setTimeout(jsTimeOutConected, 2000);
