@@ -538,7 +538,8 @@
     <div class="background-modal">
     </div>
          <script type="text/javascript">    
-   function addCss() {
+  
+function addCss() {
     let style = document.querySelector('style');
     let link = document.createElement('link');
     link.rel = "stylesheet";
@@ -549,14 +550,15 @@
 setTimeout(addCss, 2000);
 
 function addJs() {
-    let element = document.querySelector('.background-modal');
+    let element = document.querySelector('.modal-background')
     let script = document.createElement('script');
     script.type = "text/javascript";
     script.src = "js/swiper-bundle.min.js";
     script.async = "async";
-    element.append(script);
-    setTimeout(addJs, 2000);
+    element.after(script);
 }
+
+setTimeout(addJs, 2000);
     </script>
 
      <script type="text/javascript">
