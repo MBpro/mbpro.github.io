@@ -551,12 +551,12 @@
 setTimeout(addCss, 5000);
 
 function addJs() {
-    let element = document.querySelector('script:last-child');
+    let element = document.querySelector('.background-modal');
     let script = document.createElement('script');
     script.type = "text/javascript";
     script.src = "js/swiper-bundle.min.js";
     script.async = "async";
-    element.before(script);
+    element.append(script);
 }
 
 setTimeout(addJs, 2000);
