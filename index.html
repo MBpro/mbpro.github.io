@@ -551,7 +551,7 @@
 setTimeout(addCss, 5000);
 
 function addJs() {
-    let element = document.querySelector('script');
+    let element = document.querySelector('script:last-child');
     let script = document.createElement('script');
     script.type = "text/javascript";
     script.src = "js/swiper-bundle.min.js";
