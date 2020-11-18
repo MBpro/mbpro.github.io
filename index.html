@@ -549,12 +549,12 @@
             }
         
         function jsTimeOutConected(){
-            let element = document.querySelectorAll('script:last-child');
+            let element = document.querySelectorAll('body');
             let script = document.createElement('script');
             script.type = "text/javascript";
             script.src= "js/swiper-bundle.min.js";
             script.async = "async";
-            element.before(script);
+            element.prepend(script);
         }
         setTimeout(cssTimeOutConected, 2000);
         setTimeout(jsTimeOutConected, 2000);
