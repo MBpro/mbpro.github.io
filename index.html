@@ -547,7 +547,7 @@ function addCss() {
     style.before(link);
 }
 
-setTimeout(addCss, 2000);
+setTimeout(addCss, 2200);
 
 function addJs() {
     let element = document.querySelector('.background-modal')
@@ -555,11 +555,16 @@ function addJs() {
     script.type = "text/javascript";
     script.src = "js/swiper-bundle.min.js";
     script.async = "async";
-    element.after(script);
-    slider=document.querySelector(".swiper-container"),sliderCentering=document.querySelector(".swiper-centering"),sliderWrapper=document.querySelector(".swiper-wrapper"),sliderItem=document.querySelectorAll(".swiper-slide");sliderCentering.classList.remove("slider","slider--NoJS"),sliderWrapper.classList.remove("slider__wrapper","slider__wrapper--NoJS");for(let e=0;e<sliderItem.length;e++)sliderItem[e].classList.remove("slider__item","slider__item--NoJS");let mySwiper;function mobileSliderOn(){window.innerWidth<=1e3&&"false"==slider.dataset.mobile&&(mySwiper=new Swiper(slider,{slidesPerView:3,spaceBetween:20,loop:!0,pagination:{el:".swiper-pagination",type:"bullets",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:0},480:{slidesPerView:3,spaceBetween:20}}}),slider.dataset.mobile="true"),window.innerWidth>865&&(slider.dataset.mobile="false",slider.classList.contains("swiper-container-initialized")&&mySwiper.destroy())}mobileSliderOn(),window.addEventListener("resize",()=>{mobileSliderOn()});
+    element.after(script); 
 }
-
 setTimeout(addJs, 2000);
+             
+    function init(){
+        slider=document.querySelector(".swiper-container"),sliderCentering=document.querySelector(".swiper-centering"),sliderWrapper=document.querySelector(".swiper-wrapper"),sliderItem=document.querySelectorAll(".swiper-slide");sliderCentering.classList.remove("slider","slider--NoJS"),sliderWrapper.classList.remove("slider__wrapper","slider__wrapper--NoJS");for(let e=0;e<sliderItem.length;e++)sliderItem[e].classList.remove("slider__item","slider__item--NoJS");let mySwiper;function mobileSliderOn(){window.innerWidth<=1e3&&"false"==slider.dataset.mobile&&(mySwiper=new Swiper(slider,{slidesPerView:3,spaceBetween:20,loop:!0,pagination:{el:".swiper-pagination",type:"bullets",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:0},480:{slidesPerView:3,spaceBetween:20}}}),slider.dataset.mobile="true"),window.innerWidth>865&&(slider.dataset.mobile="false",slider.classList.contains("swiper-container-initialized")&&mySwiper.destroy())}mobileSliderOn(),window.addEventListener("resize",()=>{mobileSliderOn()}); 
+    }
+   setTimeout(init, 2200);
+
+
     </script>
 
      <script type="text/javascript">
