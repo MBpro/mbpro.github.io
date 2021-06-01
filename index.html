@@ -4,567 +4,545 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAIN</title>
-    <link rel="preload" href="fonts/GUERRILLA-Normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RoughDraftCY-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Двигунок</title>
     <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <style type="text/css">
-        @charset "UTF-8";/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}@font-face{font-family:Guerilla;font-display:swap;src:url(/fonts/GUERRILLA-Normal.woff2) format("woff2"),url(/fonts/GUERRILLA-Normal.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:RoughDraftCY;font-display:swap;src:url(/fonts/RoughDraftCY-Regular.woff2) format("woff2"),url(/fonts/RoughDraftCY-Regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:Roboto;font-display:swap;src:url(/fonts/Roboto-Regular.woff2) format("woff2"),url(/fonts/Roboto-Regular.woff) format("woff");font-weight:400;font-style:normal}body,html{height:100%;margin:0;padding:0;border:0;-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:inherit}aside,footer,header,main,nav,section{display:block}a{text-decoration:none}img{max-width:100%;height:auto;display:block}button,input,textarea{font-family:inherit;font-size:100%}h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:inherit;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0}ul{-webkit-padding-start:0;padding-inline-start:0;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0}figure{margin:0}p{-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0}picture{margin:0;padding:0;display:block}button{font-size:inherit;font-family:inherit}body{min-width:320px;min-height:100%;font-family:Roboto,Arial,sans-serif;font-size:17px;font-weight:400;font-style:normal;line-height:20px;color:#fff}.locked{margin:0;height:100%;overflow:hidden}.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;-webkit-clip-path:inset(100%);clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}.button-burger.button-burger--ofJS{display:none}.menu__logo{display:block;margin-left:15px}.menu__list{margin:0;padding:0;list-style:none}.menu__link{display:block}.social-list--header{display:none}.social-list__item--header:not(:last-child){margin-right:17px}.social-list--footer{margin:0;padding:0;list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-bottom:20px;margin-right:-27px}.social-list__item--footer{margin-right:27px}.social__contener{font-size:12px;line-height:14px;text-align:center}.social__text{color:#b6b6b6}.social__text--numer{margin-bottom:18px;font-size:12px;line-height:14px}.greeting{position:relative;z-index:10;padding:22px 20px 18px 20px;background-color:#002e44}.greeting::before{content:"";position:absolute;z-index:-2;top:138px;left:0;right:0;margin:auto;width:320px;height:268px;background-image:url(../img/greeting-mobile-bg@1x.png);background-repeat:no-repeat;background-size:320px 263px}.greeting::after{content:"";position:absolute;z-index:-1;top:91px;left:0;right:0;margin:auto;width:208px;height:298px;background-image:url(../img/anastasia-mobile-bg@1x.png);background-repeat:no-repeat}.greeting__title{position:relative;margin-bottom:8px;font-family:Guerilla,Arial,sans-serif;font-size:30px;font-style:normal;font-weight:400;line-height:36px;color:#fff;text-align:center}.greeting__title::before{content:"";display:block;position:absolute;bottom:-3px;left:0;right:0;width:140px;height:2px;margin:auto;background-color:#fff}.greeting__text{margin-bottom:228px;font-family:Guerilla,Arial,sans-serif;font-size:20px;font-style:normal;font-weight:400;line-height:24px;color:#fff;text-align:center}.greeting__list{margin:0;padding:0;list-style:none}.greeting__item:not(:last-child){margin-bottom:10px}.greeting__link{display:block;padding:16px 0;font-family:Guerilla,Arial,sans-serif;font-size:20px;font-style:normal;font-weight:400;line-height:24px;color:#fff;text-align:center;border-radius:25px;background-color:#ea3838;border:2px solid #ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.greeting__link:focus,.greeting__link:hover{background-color:transparent;border:2px solid #ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.greeting__link:focus:first-child,.greeting__link:hover:first-child{background-color:#002e44}.about{padding:11px 0 0 0;background-color:#003f5d;overflow:hidden}.about__title{margin-bottom:10px;font-size:20px;font-weight:500;line-height:23px;text-align:center}.about__teacher--anastasia{margin-bottom:30px}.about__teacher--tatiana{margin-bottom:20px}.about__name{font-family:Guerilla,Arial,sans-serif;font-size:20px;font-style:normal;font-weight:400;line-height:24px;color:#fff;text-align:center}.about_function{position:relative;margin-bottom:23px;font-family:Guerilla,Arial,sans-serif;font-size:17px;font-style:normal;font-weight:400;line-height:20px;color:#fff;text-align:center}.about_function::before{content:"";display:block;position:absolute;bottom:-6px;left:0;right:0;width:86px;height:2px;margin:auto;background-color:#fff}.about__list{margin:0;padding:0;list-style:none}.about__list--anastasia{margin-bottom:3px;padding-left:72px}.about__list--tatiana{margin-bottom:23px;padding-right:82px;text-align:right}.about__list--statistics{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:20px;background-color:#003f5e}.about__item--teacher{position:relative}.about__item--medal-icon::before{content:"";position:absolute;left:-40px;top:0;width:25px;height:25px;background-image:url(../img/icon/medal_star_icon@1x.png);background-repeat:no-repeat;background-size:25px 25px}.about__item--cup-icon::before{content:"";position:absolute;left:-40px;top:9px;width:25px;height:25px;background-image:url(../img/icon/сup_icon@1x.png);background-repeat:no-repeat;background-size:25px 25px}.about__item--like-icon::before{content:"";position:absolute;left:-40px;top:0;width:25px;height:25px;background-image:url(../img/icon/like_icon@1x.png);background-repeat:no-repeat;background-size:25px 25px}.about__item--guru-icon::before{content:"";position:absolute;right:-40px;top:9px;width:25px;height:25px;background-image:url(../img/icon/guru_icon@1x.png);background-repeat:no-repeat;background-size:25px 25px}.about__item--rocket-icon::before{content:"";position:absolute;right:-40px;top:9px;width:25px;height:25px;background-image:url(../img/icon/rocket_icon@1x.png);background-repeat:no-repeat;background-size:25px 25px}.about__item:not(:last-child){margin-bottom:15px}.about_comments{padding:20px;background-color:rgba(0,0,0,.8)}.about__item--info{-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%;text-align:center}.about__data{font-size:40px;font-weight:500;line-height:47px}.about__description{font-weight:500}.our-working{padding:30px 0 0 0;background-color:#002e44}.our-working__title{margin-bottom:35px;font-size:20px;font-weight:500;line-height:23px;text-align:center}.our-working__list{margin:0;padding:0;list-style:none}.our-working__item{position:relative;z-index:100;padding-top:148px}.our-working__item::before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;margin:auto;width:138px;height:138px;background-color:#003f5e;background-repeat:no-repeat;background-size:138px 138px;border-radius:50%}.our-working__item--consultation::before{background-image:url(../img/icon/consultation@1x.png)}.our-working__item--enrollment::before{background-image:url(../img/icon/enrollment@1x.png)}.our-working__item--start::before{background-image:url(../img/icon/start@1x.png)}.our-working__item:not(:last-child){margin-bottom:20px}.our-working__text{font-weight:500;text-align:center}.our-working__text span{display:none}.courses{padding:32px 20px 0 20px;background-color:#002e44}.courses__title{margin-bottom:27px;font-size:20px;font-weight:500;line-height:23px;text-align:center}.courses__atticle{background-color:#003f5e}.courses__atticle:not(:last-child){margin-bottom:33px}.courses__caption{font-family:RoughDraftCY,Arial,sans-serif;font-size:20px;line-height:25px;font-style:normal;color:#fff;padding:18px 0;text-align:center;text-transform:uppercase;border:3px solid #fff}.courses__list{margin:0;padding:0;list-style:none;border:3px solid #fff}.courses__list--price{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;border-top:none;border-bottom:none}.courses__list--docket{padding:12px 0}.courses__item{font-family:Guerilla,Arial,sans-serif;font-size:20px;font-style:normal;font-weight:400;line-height:24px;color:#fff;text-align:center}.courses__item--price{-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%;padding:12px 0}.courses__item--docket:not(:last-child){margin-bottom:10px}.courses__item--price:first-child{border-right:3px solid #fff}.courses__text{font-size:20px;line-height:19px}.courses__text--old-price{color:#ea3838;text-decoration:line-through}.courses__text--new-price{font-size:30px;line-height:31px}.courses__link{display:block;padding:19px 0 23px 0;font-family:Guerilla,Arial,sans-serif;font-size:30px;font-style:normal;font-weight:400;line-height:36px;color:#fff;text-align:center;border-left:3px solid #fff;border-right:3px solid #fff;border-bottom:3px solid #fff;background-color:#ea3838;-webkit-transition:all .5s ease 0s;-o-transition:all .5s ease 0s;transition:all .5s ease 0s}.courses__link:focus,.courses__link:hover{background-color:#fff;-webkit-transition:all .5s ease 0s;-o-transition:all .5s ease 0s;transition:all .5s ease 0s;color:#ea3838}.reviews{padding:30px 7px;background-color:#002e44}.reviews__title{margin-bottom:27px;font-size:20px;font-weight:500;line-height:23px;text-align:center}.reviews__item{height:88%;padding:24px 19px 24px 24px;background-color:#003f5e;border:3px solid #fff}.reviews__content{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:24px}.reviews__content img{margin-right:8px;width:65px;height:65px}.rewiews__stars span{display:inline-block;width:16px;height:16px;background-image:url(../img/icon/star.svg);background-repeat:no-repeat}.reviews__caption{margin-bottom:6px;padding-top:8px;font-size:24px;line-height:28px}.reviews__text{font-size:20px;line-height:24px}.js-reviews__box{position:relative;height:505px;margin:0 0 12px 0}.js-reviews__item{position:absolute;height:100%}.js-reviews__controls{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.main-footer{padding:20px 22px 3px 22px;background-color:#000f16;overflow-x:hidden}.main-footer__title{margin-bottom:15px;font-size:20px;font-weight:500;line-height:23px;text-align:center}.main-footer__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-bottom:20px}.main-footer__item{margin-right:15px}.main-footer__link{font-weight:500;color:#b6b6b6;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.main-footer__link:focus,.main-footer__link:hover{color:#fff;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup{position:fixed;z-index:6000;top:0;left:0;display:none;width:100%;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;overflow:auto}.js-popup{display:-webkit-box;display:-ms-flexbox;display:flex}.popup__inner{width:93.75%}.popup__image{display:none}.popup__image picture{position:absolute;top:0;right:-10px;height:385px;width:440px}.popup__content{position:relative;padding:32px 17px 23px 13px;background-color:#fff}.popup__title{position:relative;margin:0 0 35px 0;font-weight:500;font-size:30px;line-height:35px;text-align:center;color:#000}.popup__title::before{content:"";position:absolute;left:0;right:0;bottom:-5px;width:171px;height:2px;margin:auto;background-color:#ea3838}.popup__contener{display:-webkit-box;display:-ms-flexbox;display:flex}.popup__input{display:block;width:100%;height:40px;padding-left:10px;border:1px solid #ea3838;border-radius:0;outline:0;cursor:pointer;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup__input:focus,.popup__input:hover{-webkit-box-shadow:0 0 0 2px #ea3838;box-shadow:0 0 0 2px #ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup__input--name{margin:0 10px 0 0}.popup__input:not(:last-child){margin-bottom:10px}.popup__input:last-child{margin:0 0 16px 0}.popup__item--checkbox{margin:0 0 28px 0}.popup__label{display:block;padding-left:30px;font-size:10px;line-height:12px;color:#000;cursor:pointer}.popup__checkbox{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;-webkit-clip-path:inset(100%);clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}.popup_span{position:absolute;margin-top:-5px;margin-left:-30px;width:20px;height:20px;border:1px solid #ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup_span:hover{-webkit-box-shadow:0 0 0 2px #ea3838;box-shadow:0 0 0 2px #ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup__checkbox:checked+.popup_span{background-image:url(../img/icon/ok.svg)}.popup__checkbox:focus+.popup_span{border:2px solid #ea3838}.popup__button{display:block;width:100%;padding:11px 0;font-family:inherit;font-size:24px;line-height:28px;color:#fff;background-color:#ea3838;border-radius:0;border:0;outline:0;cursor:pointer;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup__button:focus,.popup__button:hover{opacity:.4;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup__button-close{position:absolute;top:5px;right:5px;display:block;width:30px;height:30px;border:0;border-radius:0;outline:0;background-color:transparent;cursor:pointer}.popup__button-close:focus,.popup__button-close:hover{opacity:.4}.popup__button-close::after,.popup__button-close::before{content:"";position:absolute;top:13px;left:0;width:100%;height:4px;background-color:#ea3838;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.popup__button-close::after{content:"";bottom:13px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.popup__button-close:focus::after,.popup__button-close:focus::before,.popup__button-close:hover::after,.popup__button-close:hover::before{background-color:#ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.successfully{position:fixed;z-index:6000;top:0;left:0;display:none;width:100%;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;overflow:auto}.js-successfully{display:-webkit-box;display:-ms-flexbox;display:flex}.successfully__content{width:93.75%;padding:60px 13px 25px 18px;border:1px solid #000;margin:0 auto;background-color:#fff}.successfully__img{display:block;margin:0 auto 63px auto}.successfully__text{margin-bottom:20px;font-weight:500;font-size:24px;line-height:28px;color:#000;text-align:center}.successfully__button{display:block;width:100%;padding:11px 0;font-family:inherit;font-size:24px;line-height:28px;color:#fff;background-color:#ea3838;border-radius:0;border:0;outline:0;cursor:pointer;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.successfully__button:focus,.successfully__button:hover{opacity:.4;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.background-modal{display:none}.js-background-modal{position:fixed;z-index:5999;top:0;left:0;display:block;width:100%;height:100%;background:#002e44;opacity:.94;-webkit-filter:blur(4px);filter:blur(4px)}.anchor-link{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;-webkit-clip-path:inset(100%);clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}.anchor-link--about{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}.anchor-link--our-working{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}.anchor-link--courses{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}.swiper{width:100%;overflow:hidden}.swiper-centering{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.swiper-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 0 306px;flex:0 0 306px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:25px}.swiper-pagination{margin-bottom:-12px}.swiper-pagination-bullet{width:15px;height:15px;background-color:#ea3838;border:1px solid #fff;opacity:.4}.swiper-pagination-bullet-active{opacity:1}.slider.slider--NoJS{display:block}.slider__wrapper.slider__wrapper--NoJS{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.slider__item.slider__item--NoJS{-ms-flex-negative:1;flex-shrink:1;margin-bottom:30px}@media (min-width:480px){.greeting{padding:9px 20px 29px 20px}.greeting::before{top:auto;bottom:0;left:auto;right:0;margin:0;width:480px;height:523px;background-image:url(../img/greeting-480-bg@1x.png);background-repeat:no-repeat;background-size:480px 529px}.greeting::after{top:auto;bottom:0;right:0;left:auto;width:240px;height:376px;background-image:url(../img/anastasia-480-bg@1x.png);background-repeat:no-repeat;background-size:240px 376px}.greeting__title{margin-bottom:15px;font-size:48px;line-height:58px;text-align:left}.greeting__title::before{width:186px;margin:0}.greeting__text{margin-bottom:219px;font-size:30px;line-height:36px;text-align:left}.greeting__item:not(:last-child){margin-bottom:21px}.greeting__link{width:210px}.greeting__link:focus:first-child,.greeting__link:hover:first-child{background-color:transparent}.about{padding:33px 20px 0 20px}.about__title{margin-bottom:32px;font-size:30px;line-height:35px}.about__wrapper{position:relative;margin:-1px;border:1px solid transparent}.about__name{text-align:left}.about__name--tatiana{text-align:right}.about_function{margin-bottom:40px;text-align:left}.about_function::before{bottom:-7px;left:0;right:auto;width:132px}.about_function--tatiana{text-align:right}.about_function--tatiana::before{left:auto;right:0}.about__list--anastasia{margin-bottom:125px;padding-left:35px}.about__list--tatiana{margin-bottom:153px;padding-right:35px}.about__item:not(:last-child){margin-bottom:17px}.about__picture--anastasia{position:absolute;max-width:100%;z-index:1;bottom:0;right:-120px}.about__picture--tatiana{position:absolute;z-index:1;bottom:0;left:-142px}.about__foto--anastasia{width:480px}.about__foto--tatiana{width:463px}.about_comments{margin:0 -20px}.our-working__title{font-size:30px;line-height:35px}.our-working__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.our-working__item{-webkit-box-flex:1;-ms-flex:1 1 50%;flex:1 1 50%;padding-top:176px}.our-working__item::before{width:166px;height:166px;background-size:166px 166px}.our-working__item:not(:last-child){margin-bottom:25px}.our-working__text{font-size:20px;line-height:23px}.courses{padding:50px 20px 0 20px}.courses__title{margin-bottom:48px;font-size:30px;line-height:35px}.courses__atticle{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.courses__caption{-webkit-box-flex:1;-ms-flex:1 0 100%;flex:1 0 100%;padding:31px 0;font-size:30px;line-height:37px}.courses__wrapper{-webkit-box-flex:1;-ms-flex:1 0 35%;flex:1 0 35%;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.courses__list{-webkit-box-flex:1;-ms-flex:1 0 65%;flex:1 0 65%}.courses__list--price{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.courses__list--docket{padding:28px 0 31px 0;border-top:none;border-right:none}.courses__item--price{padding:26px 0 33px 0}.courses__item--docket{position:relative;padding-left:41px;text-align:left}.courses__item--docket::before{content:"";position:absolute;left:13px;top:0;bottom:0;margin:auto;width:25px;height:25px;background-image:url(../img/icon/tick.svg);background-repeat:no-repeat;background-size:25px 25px}.courses__item--docket:not(:last-child){margin-bottom:27px}.courses__item--price:first-child{border-right:none;border-bottom:3px solid #fff}.courses__link{-webkit-box-flex:0;-ms-flex:0 0 35%;flex:0 0 35%;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;margin-top:-139px;padding:47px 0;border-top:3px solid #fff}.reviews{padding:30px 0}.reviews__title{margin-bottom:30px;font-size:30px;line-height:35px}.js-reviews__box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:auto;margin:0 -7px 12px -7px;overflow:hidden}.js-reviews__item{position:static;-webkit-box-flex:0;-ms-flex:0 0 62%;flex:0 0 62%;height:auto;margin-right:20px}.main-footer{padding:17px 0 10px 0}.main-footer__title{margin-bottom:30px;font-size:30px;line-height:35px}.main-footer__list{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-right:-73px;margin-bottom:30px}.main-footer__item{margin-bottom:15px;margin-right:73px}.swiper-container{-webkit-box-flex:0;-ms-flex:0 0 958px;flex:0 0 958px}.slider__wrapper.slider__wrapper--NoJS{padding:0 20px}}@media (min-width:480px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:480px) and (-o-min-device-pixel-ratio:3/2),(min-width:480px) and (min-resolution:144dpi),(min-width:480px) and (min-resolution:1.5dppx){.greeting::before{background-image:url(../img/greeting-480-bg@2x.png)}.greeting::after{background-image:url(../img/anastasia-480-bg@2x.png)}}@media (min-width:480px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:480px) and (-o-min-device-pixel-ratio:97/24),(min-width:480px) and (min-resolution:388dpi),(min-width:480px) and (-webkit-min-device-pixel-ratio:3),(min-width:480px) and (-o-min-device-pixel-ratio:3/1),(min-width:480px) and (min-resolution:3dppx){.greeting::before{background-image:url(../img/greeting-480-bg@3x.png)}.greeting::after{background-image:url(../img/anastasia-480-bg@3x.png)}}@media (min-width:768px){.menu__logo{margin-left:20px}.social-list--footer{margin-bottom:13px}.social__contener{width:712px;margin:0 auto}.social__text--numer{width:220px;text-align:left;margin:0 0 -20px auto}.social__text--copyright{width:209px;font-weight:500;font-size:18px;line-height:21px;margin:0 auto}.greeting{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:111px 20px 155px 20px}.greeting::before{bottom:0;left:20px;width:381px;height:418px;background-image:url(../img/greeting-tablet-bg@1x.png);background-repeat:no-repeat;background-size:381px 418px}.greeting::after{left:0;right:auto;display:block;width:227px;height:376px;background-image:url(../img/anastasia-tablet-bg@1x.png);background-repeat:no-repeat;background-size:227px 376px}.greting__content{width:371px}.greeting__title{margin-bottom:35px;text-align:center}.greeting__title::before{bottom:-14px;margin:auto}.greeting__text{margin-bottom:21px;text-align:center}.greeting__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:-21px}.greeting__item:last-child{margin-bottom:21px}.greeting__link{width:100%;padding:4px 17px}.greeting__link--sign-up{padding:4px 21px}.about{padding:30px 21px 0 21px}.about__title{margin-bottom:21px;font-size:36px;line-height:42px}.about__wrapper{position:static}.about__teacher{position:relative}.about__teacher--anastasia{padding-right:98px}.about__teacher--tatiana{margin-bottom:25px;padding-left:104px}.about__name{font-size:30px;line-height:36px}.about_function{margin-bottom:48px;font-size:20px;line-height:24px}.about_function::before{bottom:-13px;width:262px}.about__list--anastasia{margin-bottom:76px}.about__list--tatiana{margin-bottom:98px}.about__list--statistics{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:35px}.about__item{font-size:20px;line-height:23px}.about__item--medal-icon::before{width:30px;height:30px;background-size:30px 30px}.about__item--cup-icon::before{top:0;width:30px;height:30px;background-size:30px 30px}.about__item--cup-icon br{display:none}.about__item--like-icon::before{width:30px;height:30px;background-size:30px 30px}.about__item--like-icon br{display:none}.about__item--guru-icon::before{width:30px;height:30px;background-size:30px 30px}.about__item--rocket-icon::before{width:30px;height:30px;background-size:30px 30px}.about__picture--anastasia{right:-115px}.about__picture--tatiana{left:-212px}.about__foto--anastasia{width:640px}.about__foto--tatiana{width:600px}.about_comments{position:relative;z-index:100;margin:0}.about_comments br:last-child{display:none}.about__item--info{-webkit-box-flex:0;-ms-flex:0 0 28%;flex:0 0 28%;text-align:left}.about__item--info:last-child{margin:0 auto}.about__data{font-size:72px;line-height:84px}.about__description{font-size:20px;line-height:23px}.our-working{padding:50px 0 0 0}.our-working__title{margin-bottom:50px;font-size:36px;line-height:42px}.our-working__list{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.our-working__item{-webkit-box-flex:1;-ms-flex:1 1 33.33%;flex:1 1 33.33%;padding-top:186px}.our-working__item:not(:last-child)::after{content:"";position:absolute;z-index:100;left:95%;top:40%;width:40px;height:3px;background-color:#fff}.our-working__item:nth-child(3n)::after{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;-webkit-clip-path:inset(100%);clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}.courses{padding:50px 20px 50px 20px}.courses__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.courses__title{margin-bottom:43px;font-size:36px;line-height:42px}.courses__atticle{width:594px}.courses__atticle:not(:last-child){margin-bottom:48px}.courses__caption{padding:25px 0 30px 0;font-size:36px;line-height:45px}.courses__list--docket{padding:28px 0 26px 0}.courses__item--price{padding:20px 0 22px 0}.courses__item--docket{padding-left:50px;font-size:24px;line-height:29px}.courses__item--docket::before{width:30px;height:30px;background-size:30px 30px}.courses__item--docket:not(:last-child){margin-bottom:22px}.courses__text{font-size:24px;line-height:23px}.courses__text--new-price{font-size:36px;line-height:37px}.courses__link{margin-top:-140px;padding:45px 0 46px 0;font-size:36px;line-height:43px}.reviews__title{margin-bottom:70px;font-size:36px;line-height:42px}.js-reviews__item{-webkit-box-flex:0;-ms-flex:0 0 40%;flex:0 0 40%}.main-footer{padding:30px 0 15px 0}.main-footer__title{font-size:24px;line-height:28px}.main-footer__list{margin-right:-91px}.main-footer__item{margin-right:91px}.main-footer__link{font-size:24px;line-height:28px}.popup__inner{display:-webkit-box;display:-ms-flexbox;display:flex;padding:16px;width:632px;border:3px dashed red}.popup__image{position:relative;display:block;-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;overflow:hidden}.popup__content{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%}.popup__button-close{top:0;right:0;background-color:#ea3838}.popup__button-close::after,.popup__button-close::before{background-color:#fff}.popup__button-close:focus::after,.popup__button-close:focus::before,.popup__button-close:hover::after,.popup__button-close:hover::before{background-color:#fff}.successfully__content{width:300px}.slider__wrapper.slider__wrapper--NoJS{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-right:-25px;margin-bottom:-30px}.slider__item.slider__item--NoJS{-webkit-box-flex:0;-ms-flex:0 0 306px;flex:0 0 306px;height:auto;margin-right:30px;margin-bottom:30px}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:768px) and (-o-min-device-pixel-ratio:3/2),(min-width:768px) and (min-resolution:144dpi),(min-width:768px) and (min-resolution:1.5dppx){.greeting::before{background-image:url(../img/greeting-tablet-bg@2x.png)}.greeting::after{background-image:url(../img/anastasia-tablet-bg@2x.png)}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:768px) and (-o-min-device-pixel-ratio:97/24),(min-width:768px) and (min-resolution:388dpi),(min-width:768px) and (-webkit-min-device-pixel-ratio:3),(min-width:768px) and (-o-min-device-pixel-ratio:3/1),(min-width:768px) and (min-resolution:3dppx){.greeting::before{background-image:url(../img/greeting-tablet-bg@3x.png)}.greeting::after{background-image:url(../img/anastasia-tablet-bg@3x.png)}}@media (min-width:866px){.reviews__item{height:89.2%}.swiper-centering{display:block}.swiper-container{padding-bottom:0}.swiper-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-right:-20px;margin-bottom:-30px;overflow:visible}.swiper-slide{-webkit-box-flex:0;-ms-flex:0 0 308px;flex:0 0 308px;height:auto;margin-right:20px;margin-bottom:30px}.swiper-pagination{display:none}}@media (min-width:1000px){.main-header{position:fixed;z-index:5000;top:0;left:0;width:100%;padding-left:17px;padding-right:20px;background-color:#fff}.button-burger--onJS{display:none}.menu--header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.menu--header{position:relative;z-index:5000}.menu__logo{-webkit-box-flex:0;-ms-flex:0 0 56px;flex:0 0 56px;margin-right:216px}.menu__scroll{-webkit-box-flex:1;-ms-flex:1 0 420px;flex:1 0 420px;margin-right:115px}.menu__list--header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.menu__link--header{color:#000;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.menu__link--header:focus,.menu__link--header:hover{color:#ea3838;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.social-list--header{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;padding:0;list-style:none}.social-list--footer{margin-bottom:16px}.greeting{padding:167px 20px 180px 20px}.greeting::before{bottom:100px;left:20px;z-index:0;width:591px;height:515px;background-image:url(../img/greeting-1000-bg@1x.png);background-repeat:no-repeat;background-size:591px 515px}.greeting::after{z-index:10;width:270px;height:405px;background-image:url(../img/anastasia-1000-bg@1x.png);background-repeat:no-repeat;background-size:270px 405px}.greting__content{position:relative;z-index:50}.about{padding:20px 21px 0 21px}.about__title{margin-bottom:38px}.about__teacher--anastasia{margin-bottom:118px;padding-right:204px}.about__teacher--tatiana{padding-left:220px}.about__list--anastasia{margin-bottom:94px}.about__list--tatiana{margin-bottom:96px}.about__list--tatiana br{display:none}.about__item--guru-icon::before{top:-5px}.about__item--rocket-icon::before{top:-5px}.about__picture--anastasia{right:-45px}.about__picture--tatiana{left:-175px}.about__foto--anastasia{width:700px}.about__foto--tatiana{width:700px}.about_comments{padding:33px;font-size:20px;line-height:23px}.about_comments--tatiana{padding:27px}.about__item--info{-webkit-box-flex:0;-ms-flex:0 0 26%;flex:0 0 26%}.about__description{font-size:24px;line-height:28px}.our-working{padding:45px 0 0 0}.our-working__item{padding-top:216px}.our-working__item::before{width:191px;height:192px;background-size:191px 192px}.our-working__item:not(:last-child)::after{width:69px}.our-working__text{font-size:24px;line-height:28px}.our-working__text span{display:block}.courses{padding:46px 20px 80px 20px}.courses__title{margin-bottom:50px}.reviews{padding:30px 20px 80px 20px}.reviews__title{font-size:48px;line-height:56px;margin-bottom:58px}.js-reviews__box{-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -20px -30px 0}.js-reviews__item{-webkit-box-flex:0;-ms-flex:0 0 31%;flex:0 0 31%;margin-bottom:30px}.js-reviews__controls{display:none}.anchor-link{-webkit-transform:translateY(-80px);-ms-transform:translateY(-80px);transform:translateY(-80px)}.anchor-link--about{-webkit-transform:translateY(-75px);-ms-transform:translateY(-75px);transform:translateY(-75px)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1000px) and (-o-min-device-pixel-ratio:3/2),(min-width:1000px) and (min-resolution:144dpi),(min-width:1000px) and (min-resolution:1.5dppx){.greeting::before{background-image:url(../img/greeting-1000-bg@2x.png)}.greeting::after{background-image:url(../img/anastasia-1000-bg@2x.png)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.greeting::before{background-image:url(../img/greeting-1000-bg@3x.png)}.greeting::after{background-image:url(../img/anastasia-1000-bg@3x.png)}.about__item--medal-icon::before{background-image:url(../img/icon/medal_star_icon@2x.png)}.about__item--cup-icon::before{background-image:url(../img/icon/сup_icon@2x.png)}.about__item--like-icon::before{background-image:url(../img/icon/like_icon@2x.png)}.about__item--guru-icon::before{background-image:url(../img/icon/guru_icon@2x.png)}.about__item--rocket-icon::before{background-image:url(../img/icon/rocket_icon@2x.png)}}@media (min-width:1200px){.greeting{padding:167px 10% 180px 20px}.greeting::before{left:10%}.greeting::after{left:10%}}@media (min-width:1920px){.main-header{padding-left:360px;padding-right:350px}.greeting{padding:254px 350px 253px 20px}.greeting::before{bottom:193px;left:455px;width:591px;height:515px;background-size:591px 515px}.greeting::after{left:366px;width:320px;height:481px;background-size:320px 481px}.greting__content{width:556px}.greeting__title{margin-bottom:30px}.greeting__text br{display:none}.greeting__list{padding:0 48px}.greeting__link{padding:6px 27px;font-size:24px;line-height:28px}.greeting__link--sign-up{padding:6px 17px;font-size:24px;line-height:28px}.about{padding:20px 349px 0 351px}.about__title{margin-bottom:91px;font-size:48px;line-height:56px}.about__teacher--anastasia{margin-bottom:181px}.about__teacher--tatiana{margin-bottom:16px}.about__name{font-size:36px;line-height:43px}.about_function{margin-bottom:46px;font-size:24px;line-height:29px}.about__list--anastasia{margin-bottom:58px}.about__list--tatiana{margin-bottom:160px}.about__list--statistics{margin-bottom:30px}.about__item{font-size:24px;line-height:28px}.about__item:not(:last-child){margin-bottom:22px}.about__picture--anastasia{right:-250px}.about__picture--anastasia::before{content:"";position:absolute;z-index:-1;top:29px;right:-10px;width:801px;height:496px;background-image:url(../img/bg/teacher-anastasia-bg@1x.png);background-repeat:no-repeat;background-size:801px 496px}.about__picture--tatiana{left:-320px}.about__picture--tatiana::before{content:"";position:absolute;z-index:-1;top:-2px;left:677px;width:547px;height:423px;background-image:url(../img/bg/teacher-tatiana-bg@1x.png);background-repeat:no-repeat;background-size:547px 423px}.about__foto--anastasia{width:861px}.about__foto--tatiana{width:861px}.about_comments{font-size:24px;line-height:28px}.about_comments br:last-child{display:block}.about_comments--tatiana{padding:33px}.about__data{font-size:96px;line-height:112px}.our-working{padding:80px 380px 0 380px}.our-working__title{margin-bottom:60px;font-size:48px;line-height:56px}.our-working__item{padding-top:224px}.our-working__item::before{width:208px;height:208px;background-size:208px 208px}.courses{padding:80px 20px 50px 20px;margin:-80px 0 0 -30px}.courses__content{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:normal;-ms-flex-align:normal;align-items:normal;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.courses__title{font-size:48px;line-height:56px;margin-bottom:60px}.courses__atticle{margin-bottom:80px}.courses__atticle:not(:last-child){margin-bottom:50px}.courses__atticle:not(:last-child){margin-bottom:80px;margin-right:30px}.reviews{padding-top:80px}.reviews__title{margin-bottom:80px}.js-reviews__item{-webkit-box-flex:0;-ms-flex:0 0 376px;flex:0 0 376px}}@media (min-width:1920px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1920px) and (-o-min-device-pixel-ratio:3/2),(min-width:1920px) and (min-resolution:144dpi),(min-width:1920px) and (min-resolution:1.5dppx){.about__picture--anastasia::before{background-image:url(../img/bg/teacher-anastasia-bg@2x.png)}.about__picture--tatiana::before{background-image:url(../img/bg/teacher-tatiana-bg@2x.png)}}@media (min-width:1920px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1920px) and (-o-min-device-pixel-ratio:97/24),(min-width:1920px) and (min-resolution:388dpi),(min-width:1920px) and (-webkit-min-device-pixel-ratio:3),(min-width:1920px) and (-o-min-device-pixel-ratio:3/1),(min-width:1920px) and (min-resolution:3dppx){.about__picture--anastasia::before{background-image:url(../img/bg/teacher-anastasia-bg@3x.png)}.about__picture--tatiana::before{background-image:url(../img/bg/teacher-tatiana-bg@3x.png)}}@media (max-width:999px){.button-burger__span{position:absolute;top:26px;left:19px;width:25px;height:4px;background-color:#fff}.button-burger--onJS{position:absolute;top:0;right:0;display:block;width:56px;height:56px;font-size:0;background-color:#ea3838;border:none;outline:0;cursor:pointer}.button-burger--onJS::before{content:"";position:absolute;left:12px;top:12px;width:32px;height:4px;background-color:#fff;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.button-burger--onJS::after{content:"";position:absolute;left:32px;top:40px;width:12px;height:4px;background-color:#fff;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.button-burger--onJS.js-button-burger--active::before{content:"";top:25px;left:14px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.button-burger--onJS.js-button-burger--active::after{content:"";top:25px;left:14px;width:32px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.button-burger--onJS.js-button-burger--active .js-button-burger__span--active{display:none}.menu__scroll{display:block;position:relative;overflow:hidden}.menu__list--header{position:relative;z-index:10;top:0;bottom:0;height:auto;padding-top:125px;padding-bottom:177px;overflow-y:auto;background-color:#002e44}.menu__list--header::before{content:"";position:absolute;z-index:-1;right:0;top:0;width:100%;height:190px;background-image:url(../img/g3clU01men1.png);background-position:-10px 0;background-repeat:no-repeat}.menu__list--header::after{content:"";position:absolute;z-index:-1;left:0;bottom:35px;width:100%;height:210px;background-image:url("../img/ya_lab_pic_566146f846d83lermontov 2.png");background-repeat:no-repeat;background-position:110px 56px}.menu__item--header:not(:last-child){margin-bottom:1px}.menu__link--header{padding:19px 0;font-family:Guerilla,Arial,sans-serif;font-size:20px;font-style:normal;font-weight:400;line-height:24px;color:#fff;text-align:center;background-color:#003f5d;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.menu__link--header:focus,.menu__link--header:hover{opacity:.6;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}.js-menu--active::before{content:"";z-index:1000;position:absolute;top:56px;left:0;min-width:320px;width:100%;height:100%;background-color:#000;opacity:.8;-webkit-transition:all 1s ease 0s;-o-transition:all 1s ease 0s;transition:all 1s ease 0s}.js-menu__list{position:fixed;z-index:2000;top:56px;bottom:0;right:-224px;width:224px;height:100%;overflow-y:auto;background-color:#002e44;-webkit-transition:right 1s ease 0s,-webkit-transform 0s ease 1s;transition:right 1s ease 0s,-webkit-transform 0s ease 1s;-o-transition:right 1s ease 0s,transform 0s ease 1s;transition:right 1s ease 0s,transform 0s ease 1s;transition:right 1s ease 0s,transform 0s ease 1s,-webkit-transform 0s ease 1s;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0)}.js-menu__list--active{right:0;-webkit-transition:right 1s ease 0s,-webkit-transform 0s ease 0s;transition:right 1s ease 0s,-webkit-transform 0s ease 0s;-o-transition:right 1s ease 0s,transform 0s ease 0s;transition:right 1s ease 0s,transform 0s ease 0s;transition:right 1s ease 0s,transform 0s ease 0s,-webkit-transform 0s ease 0s;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}@media (max-width:479px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:479px) and (-o-min-device-pixel-ratio:3/2),(max-width:479px) and (min-resolution:144dpi),(max-width:479px) and (min-resolution:1.5dppx){.greeting::before{background-image:url(../img/greeting-mobile-bg@2x.png);background-repeat:no-repeat}.greeting::after{background-image:url(../img/anastasia-mobile-bg@2x.png);background-repeat:no-repeat;background-size:208px 298px}}@media (max-width:479px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(max-width:479px) and (-o-min-device-pixel-ratio:97/24),(max-width:479px) and (min-resolution:388dpi),(max-width:479px) and (-webkit-min-device-pixel-ratio:3),(max-width:479px) and (-o-min-device-pixel-ratio:3/1),(max-width:479px) and (min-resolution:3dppx){.greeting::before{background-image:url(../img/greeting-mobile-bg@3x.png)}}@media (max-width:479px){.js-reviews__item{display:none}}@media (-webkit-min-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:3/2),(min-resolution:144dpi),(min-resolution:1.5dppx){.our-working__item--consultation::before{background-image:url(../img/icon/consultation@2x.png)}.our-working__item--enrollment::before{background-image:url(../img/icon/enrollment@2x.png)}.our-working__item--start::before{background-image:url(../img/icon/start@2x.png)}}.webp .greeting::before{background-image:url(../img/greeting-mobile-bg@1x.webp)}.webp .greeting::after{background-image:url(../img/anastasia-mobile-bg@1x.webp)}.webp .about__item--medal-icon::before{background-image:url(../img/icon/medal_star_icon@1x.webp)}.webp .about__item--cup-icon::before{background-image:url(../img/icon/сup_icon@1x.webp)}.webp .about__item--like-icon::before{background-image:url(../img/icon/like_icon@1x.webp)}.webp .about__item--guru-icon::before{background-image:url(../img/icon/guru_icon@1x.webp)}.webp .about__item--rocket-icon::before{background-image:url(../img/icon/rocket_icon@1x.webp)}.webp .our-working__item--consultation::before{background-image:url(../img/icon/consultation@1x.webp)}.webp .our-working__item--enrollment::before{background-image:url(../img/icon/enrollment@1x.webp)}.webp .our-working__item--start::before{background-image:url(../img/icon/start@1x.webp)}@media (min-width:480px){.webp .greeting::before{background-image:url(../img/greeting-480-bg@1x.webp)}}@media (min-width:480px){.webp .greeting::after{background-image:url(../img/anastasia-480-bg@1x.webp)}}@media (min-width:480px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:480px) and (-o-min-device-pixel-ratio:3/2),(min-width:480px) and (min-resolution:144dpi),(min-width:480px) and (min-resolution:1.5dppx){.webp .greeting::before{background-image:url(../img/greeting-480-bg@2x.webp)}}@media (min-width:480px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:480px) and (-o-min-device-pixel-ratio:3/2),(min-width:480px) and (min-resolution:144dpi),(min-width:480px) and (min-resolution:1.5dppx){.webp .greeting::after{background-image:url(../img/anastasia-480-bg@2x.webp)}}@media (min-width:480px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:480px) and (-o-min-device-pixel-ratio:97/24),(min-width:480px) and (min-resolution:388dpi),(min-width:480px) and (-webkit-min-device-pixel-ratio:3),(min-width:480px) and (-o-min-device-pixel-ratio:3/1),(min-width:480px) and (min-resolution:3dppx){.webp .greeting::before{background-image:url(../img/greeting-480-bg@3x.webp)}}@media (min-width:480px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:480px) and (-o-min-device-pixel-ratio:97/24),(min-width:480px) and (min-resolution:388dpi),(min-width:480px) and (-webkit-min-device-pixel-ratio:3),(min-width:480px) and (-o-min-device-pixel-ratio:3/1),(min-width:480px) and (min-resolution:3dppx){.webp .greeting::after{background-image:url(../img/anastasia-480-bg@3x.webp)}}@media (min-width:768px){.webp .greeting::before{background-image:url(../img/greeting-tablet-bg@1x.webp)}}@media (min-width:768px){.webp .greeting::after{background-image:url(../img/anastasia-tablet-bg@1x.webp)}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:768px) and (-o-min-device-pixel-ratio:3/2),(min-width:768px) and (min-resolution:144dpi),(min-width:768px) and (min-resolution:1.5dppx){.webp .greeting::before{background-image:url(../img/greeting-tablet-bg@2x.webp)}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:768px) and (-o-min-device-pixel-ratio:3/2),(min-width:768px) and (min-resolution:144dpi),(min-width:768px) and (min-resolution:1.5dppx){.webp .greeting::after{background-image:url(../img/anastasia-tablet-bg@2x.webp)}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:768px) and (-o-min-device-pixel-ratio:97/24),(min-width:768px) and (min-resolution:388dpi),(min-width:768px) and (-webkit-min-device-pixel-ratio:3),(min-width:768px) and (-o-min-device-pixel-ratio:3/1),(min-width:768px) and (min-resolution:3dppx){.webp .greeting::before{background-image:url(../img/greeting-tablet-bg@3x.webp)}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:768px) and (-o-min-device-pixel-ratio:97/24),(min-width:768px) and (min-resolution:388dpi),(min-width:768px) and (-webkit-min-device-pixel-ratio:3),(min-width:768px) and (-o-min-device-pixel-ratio:3/1),(min-width:768px) and (min-resolution:3dppx){.webp .greeting::after{background-image:url(../img/anastasia-tablet-bg@3x.webp)}}@media (min-width:1000px){.webp .greeting::before{background-image:url(../img/greeting-1000-bg@1x.webp)}}@media (min-width:1000px){.webp .greeting::after{background-image:url(../img/anastasia-1000-bg@1x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1000px) and (-o-min-device-pixel-ratio:3/2),(min-width:1000px) and (min-resolution:144dpi),(min-width:1000px) and (min-resolution:1.5dppx){.webp .greeting::before{background-image:url(../img/greeting-1000-bg@2x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1000px) and (-o-min-device-pixel-ratio:3/2),(min-width:1000px) and (min-resolution:144dpi),(min-width:1000px) and (min-resolution:1.5dppx){.webp .greeting::after{background-image:url(../img/anastasia-1000-bg@2x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .greeting::before{background-image:url(../img/greeting-1000-bg@3x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .greeting::after{background-image:url(../img/anastasia-1000-bg@3x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .about__item--medal-icon::before{background-image:url(../img/icon/medal_star_icon@2x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .about__item--cup-icon::before{background-image:url(../img/icon/сup_icon@2x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .about__item--like-icon::before{background-image:url(../img/icon/like_icon@2x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .about__item--guru-icon::before{background-image:url(../img/icon/guru_icon@2x.webp)}}@media (min-width:1000px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1000px) and (-o-min-device-pixel-ratio:97/24),(min-width:1000px) and (min-resolution:388dpi),(min-width:1000px) and (-webkit-min-device-pixel-ratio:3),(min-width:1000px) and (-o-min-device-pixel-ratio:3/1),(min-width:1000px) and (min-resolution:3dppx){.webp .about__item--rocket-icon::before{background-image:url(../img/icon/rocket_icon@2x.webp)}}@media (min-width:1920px){.webp .about__picture--anastasia::before{background-image:url(../img/bg/teacher-anastasia-bg@1x.webp)}}@media (min-width:1920px){.webp .about__picture--tatiana::before{background-image:url(../img/bg/teacher-tatiana-bg@1x.webp)}}@media (min-width:1920px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1920px) and (-o-min-device-pixel-ratio:3/2),(min-width:1920px) and (min-resolution:144dpi),(min-width:1920px) and (min-resolution:1.5dppx){.webp .about__picture--anastasia::before{background-image:url(../img/bg/teacher-anastasia-bg@2x.webp)}}@media (min-width:1920px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1920px) and (-o-min-device-pixel-ratio:3/2),(min-width:1920px) and (min-resolution:144dpi),(min-width:1920px) and (min-resolution:1.5dppx){.webp .about__picture--tatiana::before{background-image:url(../img/bg/teacher-tatiana-bg@2x.webp)}}@media (min-width:1920px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1920px) and (-o-min-device-pixel-ratio:97/24),(min-width:1920px) and (min-resolution:388dpi),(min-width:1920px) and (-webkit-min-device-pixel-ratio:3),(min-width:1920px) and (-o-min-device-pixel-ratio:3/1),(min-width:1920px) and (min-resolution:3dppx){.webp .about__picture--anastasia::before{background-image:url(../img/bg/teacher-anastasia-bg@3x.webp)}}@media (min-width:1920px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(min-width:1920px) and (-o-min-device-pixel-ratio:97/24),(min-width:1920px) and (min-resolution:388dpi),(min-width:1920px) and (-webkit-min-device-pixel-ratio:3),(min-width:1920px) and (-o-min-device-pixel-ratio:3/1),(min-width:1920px) and (min-resolution:3dppx){.webp .about__picture--tatiana::before{background-image:url(../img/bg/teacher-tatiana-bg@3x.webp)}}@media (max-width:999px){.webp .menu__list--header::before{background-image:url(../img/g3clU01men1.webp)}}@media (max-width:999px){.webp .menu__list--header::after{background-image:url("../img/ya_lab_pic_566146f846d83lermontov 2.png")}}@media (max-width:479px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:479px) and (-o-min-device-pixel-ratio:3/2),(max-width:479px) and (min-resolution:144dpi),(max-width:479px) and (min-resolution:1.5dppx){.webp .greeting::before{background-image:url(../img/greeting-mobile-bg@2x.webp)}}@media (max-width:479px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:479px) and (-o-min-device-pixel-ratio:3/2),(max-width:479px) and (min-resolution:144dpi),(max-width:479px) and (min-resolution:1.5dppx){.webp .greeting::after{background-image:url(../img/anastasia-mobile-bg@2x.webp)}}@media (max-width:479px) and (-webkit-min-device-pixel-ratio:4.041666666666667),(max-width:479px) and (-o-min-device-pixel-ratio:97/24),(max-width:479px) and (min-resolution:388dpi),(max-width:479px) and (-webkit-min-device-pixel-ratio:3),(max-width:479px) and (-o-min-device-pixel-ratio:3/1),(max-width:479px) and (min-resolution:3dppx){.webp .greeting::before{background-image:url(../img/greeting-mobile-bg@3x.webp)}}@media (-webkit-min-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:3/2),(min-resolution:144dpi),(min-resolution:1.5dppx){.webp .our-working__item--consultation::before{background-image:url(../img/icon/consultation@2x.webp)}}@media (-webkit-min-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:3/2),(min-resolution:144dpi),(min-resolution:1.5dppx){.webp .our-working__item--enrollment::before{background-image:url(../img/icon/enrollment@2x.webp)}}@media (-webkit-min-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:3/2),(min-resolution:144dpi),(min-resolution:1.5dppx){.webp .our-working__item--start::before{background-image:url(../img/icon/start@2x.webp)}}
-    </style>
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="webp">
+<body>
     <header class="main-header">
-        <nav class="menu menu--header">
-            <picture class="menu__logo">
-                <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
-                <img src="img/comments/foto-artem@1x.png" srcset="img/comments/foto-artem@1x.png 2x" alt="Фото ученика"
-                    width="56" height="56" loading="lazy">
-            </picture>
-            <div class="menu__scroll">
-                <ul class="menu__list menu__list--header">
-                    <li class="menu__item menu__item--header">
-                        <a class="menu__link menu__link--header" href="#about">О нас</a>
-                    </li>
-                    <li class="menu__item menu__item--header">
-                        <a class="menu__link menu__link--header" href="#our-working">Как мы работаем</a>
-                    </li>
-                    <li class="menu__item menu__item--header">
-                        <a class="menu__link menu__link--header" href="#courses">Курсы</a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="social-list social-list--header">
-                <li class="social-list__item social-list__item--header">
-                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в ютуб">
-                        <img src="img/youtube.svg" alt="youtube" width="40" height="40">
-                    </a>
-                </li>
-                <li class="social-list__item social-list__item--header">
-                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в вк">
-                        <img src="img/vk.svg" alt="vk" width="40" height="40">
-                    </a>
-                </li>
-                <li class="social-list__item social-list__item--header">
-                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в инстаграм">
-                        <img src="img/insta.svg" alt="instagram" width="40" height="40">
-                    </a>
-                </li>
-            </ul>
-            <button class="button-burger button-burger--onJS button-burger--ofJS" id="burger"
-                aria-label="Кнопка открытия меню бургер">
-                <span class="button-burger__span"></span>
-            </button>
-                 <script type="text/javascript">
-                    let onJSmenu = document.querySelector('#burger');
-                    onJSmenu.classList.remove('button-burger', 'button-burger--ofJS');
-                    let hiddenMenuOnJs = document.querySelector('.menu__list--header');
-                    hiddenMenuOnJs.classList.add('js-menu__list');
-                </script>
-        </nav>
-    </header>
-    <main class="main">
-        <section class="greeting">
-            <div class="greting__content">
-                <h1 class="greeting__title">Знания по любви</h1>
-                <p class="greeting__text">Гарантируем результат<br> или вернем деньги</p>
-                <ul class="greeting__list">
-                    <li class="greeting__item"><a class="greeting__link greeting__link--sign-up modal-show"
-                            href="#">Записаться</a>
-                    </li>
-                    <li class="greeting__item"><a class="greeting__link modal-show" href="#">Бесплатное занятие</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="about">
-            <div class="anchor-link anchor-link--about" id="about"></div>
-            <h2 class="about__title">О нас</h2>
-            <article class="about__teacher about__teacher--anastasia">
-                <div class="about__wrapper">
-                    <h3 class="about__name">Дементьева Анастасия Борисовна</h3>
-                    <p class="about_function">Основатель онлайн школы</p>
-                    <ul class="about__list about__list--anastasia">
-                        <li class="about__item about__item--teacher about__item--medal-icon">сдала ЕГЭ на 90+</li>
-                        <li class="about__item about__item--teacher about__item--cup-icon">преподаватель<br> 1 категории
-                        </li>
-                        <li class="about__item about__item--teacher about__item--like-icon">разработчик
-                            авторских<br> программ</li>
-                    </ul>
-                    <picture class="about__picture about__picture--anastasia">
-                        <source type="image/webp" media="(min-width: 1920px)"
-                            srcset="img/anastasia/anastasia-mediaq-1920@1x.webp 1x, img/anastasia/anastasia-mediaq-1920@2x.webp 2x">
-
-                        <source type="image/webp" media="(min-width: 1000px)"
-                            srcset="img/anastasia/anastasia-mediaq-1000@1x.webp 1x, img/anastasia/anastasia-mediaq-1000@2x.webp 2x">
-
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/anastasia/anastasia-mediaq-768@1x.webp 1x,
-                        img/anastasia/anastasia-mediaq-768@2x.webp 2x">
-
-                        <source type="image/webp" media="(min-width: 480px)"
-                            srcset="img/anastasia/anastasia-mediaq-480@1x.webp 1x, img/anastasia/anastasia-mediaq-480@2x.webp 2x">
-
-                        <source type="image/webp" media="(max-width: 479px)"
-                            srcset="img/anastasia/anastasia-mediaq-320@1x.webp 1x, img/anastasia/anastasia-mediaq-320@2x.webp 2x">
-
-                        <source media="(min-width: 1920px)"
-                            srcset="img/anastasia/anastasia-mediaq-1920@1x.png 1x, img/anastasia/anastasia-mediaq-1920@2x.png 2x">
-
-                        <source media="(min-width: 1000px)"
-                            srcset="img/anastasia/anastasia-mediaq-1000@1x.png 1x, img/anastasia/anastasia-mediaq-1000@2x.png 2x">
-
-                        <source media="(min-width: 768px)"
-                            srcset="img/anastasia/anastasia-mediaq-768@1x.png 1x, img/anastasia/anastasia-mediaq-768@2x.png 2x">
-
-                        <source media="(min-width: 480px)"
-                            srcset="img/anastasia/anastasia-mediaq-480@1x.png 1x, img/anastasia/anastasia-mediaq-480@2x.png 2x">
-
-                        <img class="about__foto about__foto--anastasia" width="317" height="233"
-                            srcset="img/anastasia/anastasia-mediaq-320@2x.png 2x"
-                            src="img/anastasia/anastasia-mediaq-320@1x.png" alt="Фото учителя Анастасии" loading="lazy">
-                    </picture>
+       <div class="main-header__box">
+             <div class="logo logo--header">
+                <img class="logo__img--header"  src="../img/tekst_logo.svg" alt="" width="220" height="48">
+                <div class="logo__box logo__box--top">
+                    <img class="logo__small-gear-top" src="../img/small_gear.svg" alt="" width="35" height="35">
                 </div>
-                <p class="about_comments about_comments--anastasia">«Brain — это образовательный центр, где каждый
-                    ученик
-                    может выбрать<br> комфортную для него форму обучения.<br> Наши наставники — это педагоги, которые не
-                    только хорошо
-                    знают свой <br>предмет, но и постоянно совершенствуют свои знания»</p>
-            </article>
-
-            <article class="about__teacher about__teacher--tatiana">
-                <div class="about__wrapper">
-                    <h3 class="about__name about__name--tatiana">Мирашевская Татьяна Сергеевна</h3>
-                    <p class="about_function about_function--tatiana">Куратор образовательного процесса</p>
-                    <ul class="about__list about__list--tatiana">
-                        <li class="about__item about__item--teacher about__item--guru-icon">гуру истории<br> и
-                            обществознания
-                        </li>
-                        <li class="about__item about__item--teacher about__item--rocket-icon">подберет оптимальную<br>
-                            программу
-                            обучения</li>
-                    </ul>
-                    <picture class="about__picture about__picture--tatiana">
-                        <source type="image/webp" media="(min-width: 1920px)"
-                            srcset="img/tatiana/tatiana-mediaq-1920@1x.webp 1x, img/tatiana/tatiana-mediaq-1920@2x.webp 2x">
-
-                        <source type="image/webp" media="(min-width: 1000px)"
-                            srcset="img/tatiana/tatiana-mediaq-1000@1x.webp 1x, img/tatiana/tatiana-mediaq-1000@2x.webp 2x">
-
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tatiana/tatiana-mediaq-768@1x.webp 1x,
-                         img/tatiana/tatiana-mediaq-768@2x.webp 2x">
-
-                        <source type="image/webp" media="(min-width: 480px)"
-                            srcset="img/tatiana/tatiana-mediaq-480@1x.webp 1x, img/tatiana/tatiana-mediaq-480@2x.webp 2x">
-
-                        <source type="image/webp" media="(max-width: 479px)"
-                            srcset="img/tatiana/tatiana-mediaq-320@1x.webp 1x, img/tatiana/tatiana-mediaq-320@2x.webp 2x">
-
-                        <source media="(min-width: 1920px)"
-                            srcset="img/tatiana/tatiana-mediaq-1920@1x.png 1x, img/tatiana/tatiana-mediaq-1920@2x.png 2x">
-
-                        <source media="(min-width: 1000px)"
-                            srcset="img/tatiana/tatiana-mediaq-1000@1x.png 1x, img/tatiana/tatiana-mediaq-1000@2x.png 2x">
-
-                        <source media="(min-width: 768px)"
-                            srcset="img/tatiana/tatiana-mediaq-768@1x.png 1x, img/tatiana/tatiana-mediaq-768@2x.png 2x">
-
-                        <source media="(min-width: 480px)"
-                            srcset="img/tatiana/tatiana-mediaq-480@1x.png 1x, img/tatiana/tatiana-mediaq-480@1x.png 2x">
-
-                        <img class="about__foto about__foto--tatiana" width="317" height="233"
-                            srcset="img/tatiana/tatiana-mediaq-320@2x.png 2x"
-                            src="img/tatiana/tatiana-mediaq-320@1x.png" alt="Фото учителя Татьяны" loading="lazy">
-                    </picture>
-                </div>
-                <p class="about_comments about_comments--tatiana">
-                    «Кто сказал, что подготовка к экзаменам должна быть занудством?<br>
-                    Мы продумали процесс обучения так, чтобы ученикам было комфортно<br>
-                    и интересно получать знания»
-                </p>
-            </article>
-            <article class="about__statistics">
-                <h2 class="visually-hidden">Статические данные о учениках</h2>
-                <ul class="about__list about__list--statistics">
-                    <li class="about__item about__item--info about__item--performance">
-                        <p class="about__data">81+</p>
-                        <p class="about__description ">Средний балл<br>наших учеников</p>
-                    </li>
-                    <li class="about__item about__item--info about__item--percent">
-                        <p class="about__data">90%</p>
-                        <p class="about__description">Поступили в ВУЗ<br>на бюджет</p>
-                    </li>
-                    <li class="about__item about__item--info about__item--grade">
-                        <p class="about__data">4,7</p>
-                        <p class="about__description">Успеваемость наших<br>учеников в школе</p>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section class="our-working">
-            <div class="anchor-link anchor-link--our-working" id="our-working"></div>
-            <h2 class="our-working__title">Как мы работаем</h2>
-            <ul class="our-working__list">
-                <li class="our-working__item our-working__item--consultation">
-                    <p class="our-working__text">Консультация<br><span>и знакомство с куратором</span></p>
-                </li>
-                <li class="our-working__item our-working__item--enrollment">
-                    <p class="our-working__text">Оформление заказа<br> и зачисление</p>
-                </li>
-                <li class="our-working__item our-working__item--start">
-                    <p class="our-working__text">Начало<br> обучения</p>
-                </li>
-            </ul>
-        </section>
-        <section class="courses">
-            <div class="anchor-link anchor-link--courses" id="courses"></div>
-            <h2 class=" courses__title">Курсы</h2>
-            <div class="courses__content">
-                <article class="courses__atticle">
-                    <h3 class="courses__caption">Optimal</h3>
-                    <div class="courses__wrapper">
-                        <ul class="courses__list courses__list--price">
-                            <li class="courses__item courses__item--price">
-                                <p class="courses__text courses__text--old-price">3 800</p>
-                                <p class="courses__text courses__text--new-price">2 850</p>
-                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
-                            </li>
-                            <li class="courses__item courses__item--price">
-                                <p class="courses__text courses__text--old-price">34 000</p>
-                                <p class="courses__text courses__text--new-price">25 650</p>
-                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="courses__list courses__list--docket">
-                        <li class="courses__item courses__item--docket">4 занятие по 120 мин</li>
-                        <li class="courses__item courses__item--docket">связь с наставником 24/7</li>
-                        <li class="courses__item courses__item--docket">рабочая тетрадь</li>
-                        <li class="courses__item courses__item--docket">доступ в закрытый чат</li>
-                        <li class="courses__item courses__item--docket">разбор дз</li>
-                        <li class="courses__item courses__item--docket">авторская презентация</li>
-                        <li class="courses__item courses__item--docket">Большой вебинар</li>
-                    </ul>
-                    <a class="courses__link modal-show" href="#">Купить</a>
-                </article>
-                <article class="courses__atticle">
-                    <h3 class="courses__caption">Intensive</h3>
-                    <div class="courses__wrapper">
-                        <ul class="courses__list courses__list--price">
-                            <li class="courses__item courses__item--price">
-                                <p class="courses__text courses__text--old-price">5 600</p>
-                                <p class="courses__text courses__text--new-price">4 200</p>
-                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
-                            </li>
-                            <li class="courses__item courses__item--price">
-                                <p class="courses__text courses__text--old-price">50 000</p>
-                                <p class="courses__text courses__text--new-price">37 800</p>
-                                <p class="courses__text courses__text--monetary-unit">руб/год</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="courses__list courses__list--docket">
-                        <li class="courses__item courses__item--docket">4 занятие по 120 мин</li>
-                        <li class="courses__item courses__item--docket">связь с наставником 24/7</li>
-                        <li class="courses__item courses__item--docket">рабочая тетрадь</li>
-                        <li class="courses__item courses__item--docket">доступ в закрытый чат</li>
-                        <li class="courses__item courses__item--docket">разбор дз</li>
-                        <li class="courses__item courses__item--docket">авторская презентация</li>
-                        <li class="courses__item courses__item--docket">Большой вебинар</li>
-                    </ul>
-                    <a class="courses__link  modal-show" href="#">Купить</a>
-                </article>
-            </div>
-        </section>
-        <section class="reviews">
-            <h2 class="reviews__title">Отзывы наших любимых учеников</h2>
-            <div class="swiper">
-                <div class="swiper-centering slider slider--NoJS">
-                    <div class="swiper-container" data-mobile="false">
-                        <div class="swiper-wrapper slider__wrapper slider__wrapper--NoJS">
-                            <div class="swiper-slide slider__item slider__item--NoJS">
-                                <article class="reviews__item">
-                                    <div class="reviews__content">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="img/comments/foto-olesia@1x.webp 1x, img/comments/foto-olesia@2x.webp 2x">
-                                            <img src="img/comments/foto-olesia@1x.png"
-                                                srcset="img/comments/foto-olesia@2x.png 2x" alt="Фото ученика"
-                                                width="65" height="65" loading="lazy">
-                                        </picture>
-                                        <div class="rewiews__contener">
-                                            <h3 class="reviews__caption">Олеся</h3>
-                                            <div class="rewiews__stars">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="reviews__text">Татьяна Сергеевна очень хорошо, понятно и доступно
-                                        объясняет сложные
-                                        вещи(такие, например, как 20
-                                        век) и сейчас, благодаря курсам,я пишу пробники на высокие баллы. Мы быстро
-                                        нашли общий язык
-                                        и
-                                        понимали друг друга с полуслова</p>
-                                </article>
-                            </div>
-                            <div class="swiper-slide slider__item slider__item--NoJS">
-                                <article class="reviews__item">
-                                    <div class="reviews__content">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="img/comments/foto-nadezhda@1x.webp 1x, img/comments/foto-nadezhda@2x.webp 2x">
-                                            <img src="img/comments/foto-nadezhda@1x.png"
-                                                srcset="img/comments/foto-nadezhda@2x.png 2x" alt="Фото ученика"
-                                                width="65" height="65" loading="lazy">
-                                        </picture>
-                                        <div class="rewiews__contener">
-                                            <h3 class="reviews__caption">Надежда</h3>
-                                            <div class="rewiews__stars">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="reviews__text">Литература - это любовь! Анастасию Борисовну можно слушать
-                                        часами, ее
-                                        подача - высокий пилотаж. Я
-                                        еще
-                                        не встречала такого учителя по литературе, который рассказывает так много
-                                        интересной,
-                                        полезной
-                                        информации. Анастасия Борисовна помогает по-другому смотреть на произведения!
-                                        Очень рада,
-                                        что
-                                        занималась именно у этого преподавателя!</p>
-                                </article>
-                            </div>
-                            <div class="swiper-slide slider__item slider__item--NoJS">
-                                <article class="reviews__item">
-                                    <div class="reviews__content">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="img/comments/foto-artem@1x.webp 1x, img/comments/foto-artem@2x.webp 2x">
-                                            <img src="img/comments/foto-artem@1x.png"
-                                                srcset="img/comments/foto-artem@1x.png 2x" alt="Фото ученика" width="65"
-                                                height="65" loading="lazy">
-                                        </picture>
-                                        <div class="rewiews__contener">
-                                            <h3 class="reviews__caption">Артём</h3>
-                                            <div class="rewiews__stars">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="reviews__text">Проходил курсы по Профильной математике. Никогда не
-                                        понимал,
-                                        как можно
-                                        запоминать такие сложные
-                                        формулы....Но здесь мне объяснили материал доступно и понятно, разложили все по
-                                        полочкам,
-                                        показали
-                                        лайфкахи и хитрости в вычислениях. Кураторы просто огонь, быстро нашли ко мне
-                                        подход, тем
-                                        самым,
-                                        облегчили мне обучение!</p>
-                                </article>
-                            </div>
-                            <div class="swiper-slide slider__item slider__item--NoJS">
-                                <article class="reviews__item">
-                                    <div class="reviews__content">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="img/comments/foto-artem@1x.webp 1x, img/comments/foto-artem@2x.webp 2x">
-                                            <img src="img/comments/foto-artem@1x.png"
-                                                srcset="img/comments/foto-artem@1x.png 2x" alt="Фото ученика" width="65"
-                                                height="65" loading="lazy">
-                                        </picture>
-                                        <div class="rewiews__contener">
-                                            <h3 class="reviews__caption">Артём</h3>
-                                            <div class="rewiews__stars">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="reviews__text">Проходил курсы по Профильной математике. Никогда не
-                                        понимал,
-                                        как можно
-                                        запоминать такие сложные
-                                        формулы....Но здесь мне объяснили материал доступно и понятно, разложили все по
-                                        полочкам,
-                                        показали
-                                        лайфкахи и хитрости в вычислениях. Кураторы просто огонь, быстро нашли ко мне
-                                        подход, тем
-                                        самым,
-                                        облегчили мне обучение!</p>
-                                </article>
-                            </div>
-                            <div class="swiper-slide slider__item slider__item--NoJS">
-                                <article class="reviews__item">
-                                    <div class="reviews__content">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="img/comments/foto-artem@1x.webp 1x, img/comments/foto-artem@2x.webp 2x">
-                                            <img src="img/comments/foto-artem@1x.png"
-                                                srcset="img/comments/foto-artem@1x.png 2x" alt="Фото ученика" width="65"
-                                                height="65" loading="lazy">
-                                        </picture>
-                                        <div class="rewiews__contener">
-                                            <h3 class="reviews__caption">Артём</h3>
-                                            <div class="rewiews__stars">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="reviews__text">Проходил курсы по Профильной математике. Никогда не
-                                        понимал,
-                                        как можно
-                                        запоминать такие сложные
-                                        формулы....Но здесь мне объяснили материал доступно и понятно, разложили все по
-                                        полочкам,
-                                        показали
-                                        лайфкахи и хитрости в вычислениях. Кураторы просто огонь, быстро нашли ко мне
-                                        подход, тем
-                                        самым,
-                                        облегчили мне обучение!</p>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+                <div class="logo__box logo__box--center">
+                    <img class="logo__big_gear" src="../img/big_gear.svg" alt="" width="41" height="41">
+                </div> 
+                <div class="logo__box logo__box--bottom">
+                    <img class="logo__small-gear-bottom" src="../img/small_gear.svg" alt="" width="35" height="35">
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <div class="menu main-footer__menu">
-            <h2 class="main-footer__title">Brain</h2>
-            <ul class="menu__list main-footer__list">
-                <li class="menu__item main-footer__item"><a class="menu__link main-footer__link" href="#about">О нас</a>
-                </li>
-                <li class="menu__item main-footer__item"><a class="menu__lin main-footer__link" href="#our-working">Как
-                        мы
-                        работаем</a></li>
-                <li class="menu__item main-footer__item"><a class="menu__link main-footer__link"
-                        href="#courses">Курсы</a></li>
-            </ul>
-            <ul class="social-list social-list--footer">
-                <li class="social-list__item social-list__item--footer">
-                    <a class="social-list__link" href="#" target="_blank" aria-label="поделиться в ютуб">
-                        <img src="img/youtube.svg" alt="youtube" width="40" height="40" loading="lazy">
-                    </a>
-                </li>
-                <li class="social-list__item social-list__item--footer">
-                    <a class=" social-list__link" href="#" target="_blank" aria-label="поделиться в вк">
-                        <img src="img/vk.svg" alt="vk" width="40" height="40" loading="lazy">
-                    </a>
-                </li>
-                <li class="social-list__item social-list__item--footer">
-                    <a class=" social-list__link" href="#" target="_blank" aria-label="поделиться в инстаграм">
-                        <img src="img/insta.svg" alt="instagram" width="40" height="40" loading="lazy">
-                    </a>
-                </li>
-            </ul>
-            <div class="social__contener">
-                <p class="social__text social__text--numer">ИП Дементьева Анастасия Борисовна<br> ИНН
-                    522802790515<br> ОГРНИП 320527500055460</p>
-                <p class="social__text social__text--copyright">COPYRIGHT © 2020 Brain</p>
+            <nav class="main-header__nav">
+                <ul class="menu-list menu-list--header" id="main-menu">
+                    <li class="menu-list__item menu-list__item--header"><a href="#product" class="menu-list__link">О продукте</a></li>
+                    <li class="menu-list__item menu-list__item--header"><a href="#instruction" class="menu-list__link">Инструкция</a></li>
+                    <li class="menu-list__item menu-list__item--header"><a href="#comment" class="menu-list__link">Отзывы</a></li>
+                    <li class="menu-list__item menu-list__item--header"><a href="#experience" class="menu-list__link">Делимся опытом</a></li>
+                    <li class="menu-list__item menu-list__item--header"><a href="#question" class="menu-list__link">Задать вопрос</a></li>
+                </ul>
+                <ul class="social-list social-list--header">
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#" aria-label="ссылка на фейсбук">
+                            <img class="social-list__img" src="../img/facebook.svg" alt="" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#" aria-label="ссылка на вайбер">
+                            <img class="social-list__img" src="../img/viber.svg" alt="" width="30" height="30">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#" aria-label="ссылка на телеграм">
+                            <img class="social-list__img" src="../img/telegram.svg" alt="" width="30" height="30">
+                        </a>
+                    </li>
+                </ul>
+                <div class="social-list__phone">+380 96 506 19 19</div>
+                <div class="burger burger--close">
+                    <button class="burger__button burger__button--close" id="burger-close" aria-label="Кнопка закрытия меню" type="button"></button>
+                    <span class="burger__text" >закрыть меню</span>
+                </div>
+            </nav>
+            <div class="main-header_wrap-icon">
+                <div class="main-header__item-icon main-header__item-icon--delivery">
+                    <img class="main-header__icon main-header__icon--delivery"  src="../img/delivery_icon.svg" alt="" width="35" height="35">
+                    <p class="main-header__text main-header__text--delivery">Доставляем:<br>Укрпочтой и Новой почтой<br>по всей територии Украины</p>
+                </div>
+                <div class="main-header__item-icon main-header__item-icon--phone">
+                    <img class="main-header__icon main-header__icon--phone" src="../img/phone_icon.svg" alt="" width="35" height="35">
+                    <p class="main-header__text main-header__text--phone">+38 096 506 19 19 </p>
+                </div>
+            </div>
+            <div class="burger burger--open">
+                <button class="burger__button" id="burger-open" aria-label="Кнопка открытия меню" type="button"><span class="burger__line"></span></button>
             </div>
         </div>
-    </footer>
-    <article class="popup">
-        <div class="popup__inner">
-            <div class="popup__image">
-                <picture>
-                    <source type="image/webp"
-                        srcset="img/popup/teachers-popup@1x.webp 1x, img/popup/teachers-popup@2x.webp 2x">
-                    <img src="img/popup/teachers-popup@1x.png" srcset="img/popup/teachers-popup@2x.png 2x"
-                        alt="Фото учетелей" width="440" height="385" loading="lazy">
-                </picture>
+    </header>
+
+    <main class="main">
+        <div class="main__wrap">
+            <div class="main__box">
+                <h1 class="main__title">Тестер герметичности ГБЦ</h1>
+                <div class="main__content">
+                    <p class="main__text">Простой и надёжный способ, позволяет за короткое время с точностью 99,9% самостоятельно выявить повреждения прокладки ГБЦ, головки цилиндров или блока цилиндров,а в случае отсутствия повреждений сэкономить время и  деньги на  не нужном дорогостоящим  ремонте. Незаменимый метод вовремя предпокупочной диагностики автомобиля</p>
+                    <div class="main__wrap-img">
+                        <img class="main__img" src="../img/main320@1x.jpg" alt="" width="300" height="256">
+                    </div>  
+                    <div class="main__wrap-info">
+                        <div class="main__wrap-del-and-pay">
+                            <p class="main__info-buy">* После нажатия кнопки купить появится возможность указать нужное количество товара, выбрать способ оплаты и доставки.</p>
+                            <p class="main__info-delivery main__margin">Доставка:<br> “Новая почта” и “Укрпочта”.</p>
+                            <p class="main__info-pay main__margin">Оплата:<br> При покупке<br>(Visa, Mastercard-LiqPay, Privat24)</p>
+                            <p class="main__info-method-expulsion main__margin">Наложеный платеж:<br> Новая почта, Укрпочта.</p>
+                        </div>
+                        <div class="main__wrap-price">
+                            <div class="main__wrap-inner">
+                                <span class="main__text-price">Цена:</span>
+                                <span class="main__sum" id="out-main-price"></span>
+                                <span class="main__currency">ГРН</span>
+                            </div>
+                            <a class="button button--link" href="#" id="link-pay">Купить</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="popup__content">
-                <h2 class="popup__title">Заполни заявку</h2>
-                <form class="popup__form">
-                    <div class="popup__contener">
-                        <input class="popup__input popup__input--name" type="text" placeholder="Имя">
-                        <input class="popup__input popup__input--subject" type="text" placeholder="Предмет">
+        </div>
+        <div class="product">
+            <div class="anchor-link anchor-link--product" id="product"></div>
+            <h2 class="product__title">О продукте</h2>
+            <p class="product__text">Тестер герметичности ГБЦ применяется на дизельных и бензиновых двигателях, а также на двигателях с установленным ГБО. Идущая в комплекте синяя жидкость вступает в реакцию с CO2 который в случае повреждений прокладки или головки ГБЦ содержится в выхлопных газах и попадает из камер сгораний в систему охлаждения (В исправном двигателе в системе охлаждения CO2 отсутствует.) Изменения цвета жидкости из синего на зеленый или жёлтый свидетельствует о повреждении герметичности ГБЦ .</p>
+            <div class="swiper-slider">
+                <div class="swiper-container" data-mobile="false">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="product__img" src="../img/blue-1920.png" 
+                                srcset="../img/blue-640.png 640w,
+                                        ../img/blue-920.png 920w,
+                                        ../img/blue-1220.png 1220w"
+                                sizes=" (max-width: 479px) 300px,
+                                        (max-width: 767px) 263px,
+                                        (max-width: 1099px) 242px,
+                                        (max-width: 1365px) 340px,370px"
+                                alt=""
+                                width="370" height="493" 
+                                decoding = "async">
+                      
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="product__img" src="../img/green-1920.png" 
+                                srcset="../img/green-640.png 640w,
+                                        ../img/green-920.png 920w,
+                                        ../img/green-1220.png 1220w"
+                                sizes=" (max-width: 479px) 300px,
+                                (max-width: 767px) 263px,
+                                (max-width: 1099px) 242px,
+                                (max-width: 1365px) 340px,370px"
+                                alt=""
+                                width="370" height="493" 
+                                decoding = "async">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="product__img" src="../img/yellow-1920.png" 
+                                srcset="../img/yellow-640.png 640w,
+                                        ../img/yellow-920.png 920w,
+                                        ../img/yellow-1220.png 1220w"
+                                sizes="(max-width: 479px) 300px,
+                                (max-width: 767px) 263px,
+                                (max-width: 1099px) 242px,
+                                (max-width: 1365px) 340px,370px"
+                                alt=""
+                                width="370" height="493" 
+                                decoding = "async">
+                        </div>
                     </div>
-                    <div class="popup__item">
-                        <input class="popup__input popup__input--phone" type="text" placeholder="Тел.">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <article class="instruction" >
+            <div class="anchor-link anchor-link--instruction" id="instruction"></div>
+            <h2 class="instruction__title">Инструкция</h2>
+            <ol class="instruction__list">
+                <li class="instruction__item">
+                    <p class="instruction__text">В холодное время года нагреть двигатель до 30°- 40° градусов после чего двигатель заглушить. В теплое время перейти к пункту 2.
+                    </p>
+                </li>
+                <li class="instruction__item">
+                    <p class="instruction__text">Соединить пластиковую трубку с резиновой пробкой.</p>
+                </li>
+                <li class="instruction__item">
+                    <p class="instruction__text">Налить в трубку жидкость до уровня, где начинаются камеры, примерно 2 мл как показано на рисунке ниже</p>
+                </li>
+                <li class="instruction__item">
+                    <p class="instruction__text">Открыть расширительный бачок или радиатор в зависимости от конструкции системы охлаждения и установить тестер как показано на рисунке</p>
+                </li>
+                <li class="instruction__item">
+                    <p class="instruction__text">Запустить двигатель, тест проводить на холостом ходу.</p>
+                </li>
+                <li class="instruction__item">
+                    <p class="instruction__text">Во время работы двигателя через тестер должны выходить пузырьки воздуха. Изменения цвета жидкости из синего на зеленый или жёлтый свидетельствует о пробои прокладки ГБЦ или повреждении головки блока цилиндров</p>
+                </li>
+            </ol>
+            <ul class="instruction__list-img">
+                <li class="instruction__item-img">
+                    <img class="instruction__img" src="../img/test_instruction-1920.jpg" 
+                    srcset="../img/test_instruction-300.jpg 300w,
+                            ../img/test_instruction-600.jpg 600w,
+                            ../img/test_instruction-900.jpg 900w"
+                    sizes="30rem"
+                    alt=""
+                    width="300" height="300" 
+                    decoding = "async">
+                </li>
+                <li class="instruction__item-img">
+                    <img class="instruction__img" src="../img/test_instruction-1920.jpg" 
+                    srcset="../img/test_instruction-300.jpg 300w,
+                            ../img/test_instruction-600.jpg 600w,
+                            ../img/test_instruction-900.jpg 900w"
+                    sizes="30rem"
+                    alt=""
+                    width="300" height="300" 
+                    decoding = "async">
+                </li>
+            </ul>
+            <section class="instruction__attention">
+                <h3 class="instruction__title-attention">Внимание!</h3>
+                <p class="instruction__text-attention">Не открывать крышку расширительного бачка или радиатора при достижении двигателя рабочей температуры так как при снятии крышки в системе охлаждения понижается давление и соответственно уменьшается температура кипения это может привести к моментальному закипанию охлаждающей жидкости которая увеличится в объеме и выйдет из бачка или радиатора, что чревато серьезными ожогами лица и рук.</p>
+                <p class="instruction__text-attention">Не допускать смешивание охлаждающей жидкости с жидкостью для теста. При смешивании жидкостей тест может показать ложный результат.</p>
+                <section class="instruction__attention">
+                    <h4 class="instruction__if">Если смешивание жидкостей произошло:</h4>
+                        <ol class="instruction__list instruction__list--attention">
+                            <li class="instruction__item">
+                                <p class="instruction__text">Вылить жидкость из пластиковой трубки</p>
+                            </li>
+                            <li class="instruction__item">
+                                <p class="instruction__text">Промыть пластиковую трубку водой и высушить</p>
+                            </li>
+                            <li class="instruction__item">
+                                <p class="instruction__text">Провести тест заново</p>
+                            </li>
+                        </ol>
+                </section>
+            </section>
+        </article>
+        <article class="comment">
+            <div class="anchor-link anchor-link--comment" id="comment"></div>
+            <div class="comment__content">
+                <h2 class="comment__title">Отзывы</h2>
+                <div class="comment__wrap">
+                    <div class="comment__block">
+                        <span class="comment__name">Cергей</span><span class="comment__data">21.02.2021</span>
+                        <p class="comment__text">Дешевый и эффективный метод  для проверки ГБЦ. Уберег меня от замены прокладки за 7000 грн,  несмотря на диагноз двух механиков </p>
+                        <a class="comment__link" href="#">Ответить</a>
                     </div>
-                    <div class="popup__item">
-                        <input class="popup__input popup__input--email" type="text" placeholder="Email">
+                    <div class="comment__block comment__block-answer-1">
+                        <span class="comment__name">Cергей</span><span class="comment__data">21.02.2021</span>
+                        <p class="comment__text">Дешевый и эффективный метод  для проверки ГБЦ. Уберег меня от замены прокладки за 7000 грн,  несмотря на диагноз двух механиков </p>
+                        <a class="comment__link" href="#">Ответить</a>
                     </div>
-                    <div class="popup__item popup__item--checkbox">
-                        <label class="popup__label">
-                            <input class="popup__checkbox" type="checkbox">
-                            <span class="popup_span"></span>
-                            согласие на обработку персональных данных
-                        </label>
+                    <div class="comment__block comment__block-answer-2">
+                        <span class="comment__name">Cергей</span><span class="comment__data">21.02.2021</span>
+                        <p class="comment__text">Дешевый и эффективный метод  для проверки ГБЦ. Уберег меня от замены прокладки за 7000 грн,  несмотря на диагноз двух механиков </p>
+                        <a class="comment__link" href="#">Ответить</a>
                     </div>
-                    <button class="popup__button popup__button-submit" type="submit">Отправить</button>
-                    <button class="popup__button-close" type="button">
-                        <span class="visually-hidden">Закрыть форму</span>
-                    </button>
+                    <div class="comment__block">
+                        <span class="comment__name">Cергей</span><span class="comment__data">21.02.2021</span>
+                        <p class="comment__text">Дешевый и эффективный метод  для проверки ГБЦ. Уберег меня от замены прокладки за 7000 грн,  несмотря на диагноз двух механиков </p>
+                        <a class="comment__link" href="#">Ответить</a>
+                    </div>
+                    <div class="comment__block">
+                        <span class="comment__name">Cергей</span><span class="comment__data">21.02.2021</span>
+                        <p class="comment__text">Дешевый и эффективный метод  для проверки ГБЦ. Уберег меня от замены прокладки за 7000 грн,  несмотря на диагноз двух механиков </p>
+                        <a class="comment__link" href="#">Ответить</a>
+                    </div>
+                </div>
+                <form class="comment__form" action="he.php" name="comments">
+                    <h2 class="comment__form-title">Написать комментарий</h2>
+                    <div class="comment__wrap-form">
+                        <div class="comment__item">
+                            <label class="comment__label" for="name-comment">Имя *</label>
+                            <input class="comment__input validate" type="text" name="name-comment" id="name-comment" pattern="[a-z A-Z а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ -]{2,30}" placeholder=" " maxlength="30" required>
+                        </div>
+                        <div class="comment__item">
+                            <label class="comment__label" for="email-comment">Email *</label>
+                            <input class="comment__input validate" type="email" name="email-comment" id="email-comment" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                title="Пример правильного формата email:text@text.com"  placeholder=" "  maxlength="100" required>
+                        </div>
+                    </div>
+                    <label class="comment__label" for="message-comment">Сообщение *</label>
+                    <textarea class="comment__textarea validate" name="textarea-comment" id="message-comment" cols="30" rows="10" placeholder=" " maxlength="4000" required></textarea>
+                    <button class="button button--sumbit" type="submit">Отправить</button>
+                </form> 
+            </div>
+        </article>
+        <div class="experience" >
+            <div class="anchor-link anchor-link--experience" id="experience"></div>
+            <h2 class="experience__title">Делимся опытом</h2>
+            <article class="experience__article">
+                <h3 class="experience__legend">Проверка ГБЦ на Skoda Fabia 1.4 mpi MK1</h3>
+                <div class="experience__wrap">
+                    <p class="experience__text">Хочу поделиться своей историей по использованию данного "девайса" может кому-то, пригодится. В моем владении авто Skoda Fabia 2001 года выпуска, двигатель AME бензин 1,4 MPI с установкой ГБО это тот двигатель на котором гильзы цилиндров съемные ну да ладно история не об этом. Зимним январским утром усевшись в свою старую рабочую лошадку и завел двигатель, раздался пронзающий писк после которого я второй раз проснулся, на приборе светился красным датчик уровня жидкости. Открывши капот обнаружил что в расширительном бачке не хватает охлаждающей жидкости примерно пол сантиметра до минимальной черты уровня жидкости. Недолго думая я долил тосол, благо в багажнике была запечатанная пяти литровая канистра так как собирался заменить его еще до начала зимы, но все как то не получалось, видать не судьба. Убедившись что датчик перестал светиться, я поехал, по дороге раздумывая куда могла уйти жидкость и вдруг вспомнил что летом в августе примерно пол года назад у меня был такой же случай. Поспрашивавши в знакомых шкодоводов и почитав форумы на тему доливают ли они жидкость и как часто получил позитивный ответ что доливают и еще примерно стем же периодом что и у меня, вздохнувши легко я продолжил заниматься своими делами. На следующие утро к сожалению все повторилось, снова пронзающий писк датчика температуры, снова открываю капот, смотрю на бачок, но к моему удивлению уровень в норме, откручиваю крышку бачка и вдруг обнаруживаю там маслянистое пятно, присмотревшись еще замечаю немного эмульсии, да-да, той самой зловещей которая говорит о пробитой прокладки ГБЦ или того лучше трещин головки блока цилиндров ну или уже для полного спокойствия трещина самого блока цилиндров. Долго не раздумывая решаю что буду ездить и посмотрю, будет ли гнать масло в бачок, да знаю последствия эксплуатации авто с пробитой прокладкой, но решив что на дворе зима до такого не дойдет. За две недели проехал 700 км, масло в бачок не гонит, уровень жидкости без изменений, датчик все так же срабатывает, но вот странность если авто заглушить и завести снова датчик гаснет, патрубки не дует, печка работает, масло чистое без эмульсии, уровень масла в норме. Появилась надежда, что это масляный радиатор или, как его еще называют охладитель масла. Почитав форумы я наткнулся на комментарий, что можно легко проверить ГБЦ с помощью этого теста, недолго думая заказал. И вот спустя день тест ГБЦ у меня, бегу к машине запускаю двигатель далее, делаю все согласно инструкции, тест в расширительном бачке, жду. Проходит одна минута, вторая минута, седьмая минута, жидкость не меняет цвет и тут я начинаю злиться и даю газу, держу на 2000 об/мин и жидкость начинает вылетать из бачка через трубку тестера. Всего вышло примерно 200-300 мл жидкости, но доливать не стал, делаю все сначала как в инструкции, жду, спустя 10 минут синяя жидкость меняет цвет в сторону зеленого хотя правильно сказать становится едва зеленой ну или сине-зеленой, что принципе можно посмотреть на фото. Жду еще немного, жидкость больше не меняет цвет. Снова странная ситуация, ведь жидкость должна быть зелена или желтая ну, или синяя, а у меня не понятная, немного подумал начал искать информацию по этой жидкости
+                     И вот к чему пришел:
+                    Жидкость меняет цвет в зависимости от количества СO2, чем его больше, тем жидкость будет меняться в сторону желтого проходя путь от синего(начального состояния) к зеленому и от зеленого к желтому. В моем случае цвет начал изменятся в сторону зеленого и остановился на этом цвете потому что содержание CO2 в расширительном бачке если так можно выразится было минимально, не буду расписывать подробно кому интересно больше узнать по этой теме рекомендую освежить память по химии школьной программы.<br>
+                    <span>Итог:</span><br>
+                    После снятия головки, механик подтвердил диагноз прогара прокладки ГБЦ в первом цилиндре, повреждение было едва заметно, наверное по этой причине и не было выразительных симптомов разгерметизации ГБЦ и жидкость едва изменила цвет. От себя могу порекомендовать перед тем как делать тест откачать немного охлаждающей жидкости из расширительного бачка, примерно 200-300 мл думаю вполне хватит, а так же перекрыть обратку в расширительном бачке так как есть подозрение что часть CO2 может уходить через нее и тест может быть менее точным, это пришло в голову уже после того как сделал тест, так что точно утверждать не буду. Что касается датчика
+                    уровня жидкости ругался он еще даже после замены прокладки ГБЦ и перестал только после того, как его тщательно вымыл.</p>
+                    <ul class="experience__list">
+                        <li class="experience__item">
+                            <img class="experience__img" src="../img/test-1920.jpg" 
+                                srcset="../img/test-640.jpg 640w,
+                                        ../img/test-920.jpg 920w,
+                                        ../img/test-1220.jpg 1220w"
+                                sizes=" (max-width: 479px) 300px,
+                                        (max-width: 767px) 440px,
+                                        (max-width: 1099px) 356px,
+                                        (max-width: 1365px) 490px,633px"
+                                alt=""
+                                width="633" height="790" 
+                                decoding = "async">
+                        </li>
+                        <li class="experience__item">
+                            <img class="experience__img" 
+                            srcset="../img/test2-640.jpg 640w,
+                                    ../img/test2-920.jpg 920w,
+                                    ../img/test2-1220.jpg 1220w"
+                            sizes=" (max-width: 479px) 300px,
+                                    (max-width: 767px) 440px,
+                                    (max-width: 1099px) 356px,
+                                    (max-width: 1365px) 490px,633px"
+                            src="../img/test2-1920.jpg"
+                            alt=""
+                            width="633" height="790"
+                             decoding = "async">
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div class="question" >
+            <div class="anchor-link anchor-link--question" id="question"></div>
+            <div class="question__wrap">
+                <h2 class="question__title">Написать нам сообщение</h2  >
+                <form class="question__form" action="add.php" name="question">
+                    <div class="question__contener">
+                        <div class="question__item">
+                            <label class="question__label" for="name-question">Имя *</label>
+                            <input class="question__input question__input--name validate" type="text" name="name-question" id="name-question" pattern="[a-z A-Z а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ -]{2,30}" placeholder=" " maxlength="30" required>
+                        </div>
+                        <div class="question__item">
+                            <label class="question__label" for="email-question">Email *</label>
+                            <input class="question__input question__input--email validate" type="text" name="email-question" id="email-question" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                            title="Пример правильного формата email:text@text.com"  placeholder=" "  maxlength="100" required>
+                        </div>
+                    </div>
+                    <div class="question__item question__item--theme">
+                        <label class="question__label" for="theme">Тема</label>
+                        <input class="question__input validate" id="theme" type="text" name="theme"  placeholder=" "  pattern="[a-z A-Z а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ -]{1,50}" maxlength="50">
+                    </div>
+                    <div class="question__item">
+                        <label class="question__label" for="message">Сообщение *</label>
+                        <textarea class="question__textarea validate" name="textarea-question" id="message" cols="30" rows="10" placeholder=" " maxlength="4000" required></textarea>
+                    </div>
+                    <button class="button button--sumbit button--question" type="submit" >Отправить</button>
                 </form>
             </div>
         </div>
-    </article>
-    <section class="successfully">
-        <h2 class="visually-hidden">Ваши данные успешно отправленные</h2>
-        <div class="successfully__content">
-            <img class="successfully__img" src="img/check.svg" alt="checked" width="123" height="100">
-            <p class="successfully__text">Мы свяжемся с тобой<br> в ближайшее время!</p>
-            <button class="successfully__button" type="button">Вернуться</button>
+    </main>
+
+    <footer class="main-footer">
+        <div class="logo logo--footer">
+            <div class="logo__main-wrap">
+                <img class="logo__img-text-footer" src="../img/logo-text-footer.svg" alt=""  width="157" height="33">
+                <div class="logo__wrap-gear">
+                    <img class="logo__img-gear-footer" src="../img/logo-gear-footer.svg" alt="" width="34" height="34">
+                </div>
+            </div>
         </div>
-    </section>
-    <div class="background-modal">
+        <ul class="menu-list menu-list--footer">
+            <li class="menu-list__item menu-list__item--footer"><a href="#product" class="menu-list__link menu-list__link--footer">О продукте</a></li>
+            <li class="menu-list__item menu-list__item--footer"><a href="#instruction" class="menu-list__link menu-list__link--footer">Инструкция</a></li>
+            <li class="menu-list__item menu-list__item--footer"><a href="#comment" class="menu-list__link menu-list__link--footer">Отзывы</a></li>
+            <li class="menu-list__item menu-list__item--footer"><a href="#experience" class="menu-list__link menu-list__link--footer">Делимся опытом</a></li>
+            <li class="menu-list__item menu-list__item--footer"><a href="#question" class="menu-list__link menu-list__link--footer">Задать вопрос</a></li>
+        </ul>    
+        <ul class="social-list social-list--footer">
+            <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="ссылка на фейсбук">
+                    <img class="social-list__img" src="../img/facebook.svg" alt="" width="40" height="40">
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="ссылка на вайбер">
+                    <img class="social-list__img" src="../img/viber.svg" alt="" width="40" height="40">
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="#" aria-label="ссылка на телеграм">
+                    <img class="social-list__img" src="../img/telegram.svg" alt="" width="40" height="40">
+                </a>
+            </li>
+        </ul>
+        <p class="main-footer__text"><span>COPYRIGHT</span> © 2020 Двигунок</p>
+    </footer>
+
+    <div class="background-mobile-menu"></div>
+
+    <div class="purchase" id="popup">
+        <form action="handler.php" id="form-popup"  name="delivery-and-pay"  method="post" >
+            <div class="purchase__main-content">
+                <button class="button-close"  aria-label="Кнопка закрытия формы заказа" id="button-close-popup" type="button"></button>
+                <h2 class="purchase__act-name">Оформление товара</h2>
+                <div  class="purchase__box-1">
+                    <h3 class="purchase__product-name">Тестер герметичности ГБЦ</h3>
+                    <div class="purchase__outer-box">
+                        <div class="purchase__wrap-img">
+                            <img class="purchase__img" src="../img/buy-image.jpg" alt="фото товара" width="176" height="176"> 
+                        </div>
+                        <div class="purchase__inner-box">
+                            <div class="purchase__content-quantity">
+                                <div class="purchase__item purchase__item--price">
+                                    <p class="purchase__text-piece">Цена за 1 шт.</p>
+                                    <p class="purchase__text-price"><span id="out-price"></span></p>
+                                </div>
+                                <div class="purchase__wrap-choice-quantity"> 
+                                    <label class="purchase__label-quantity" for="quantity">Количество</label>
+                                    <button class="purchase__button purchase__button--subtract" id="button-subtract-quantity" type="button"></button>
+                                    <input class="purchase__input-quanity" type="text" id="quantity" value="1"  maxlength="100">
+                                    <button class="purchase__button purchase__button--add" id="button-add-quantity" type="button"></button>
+                                </div>
+                                <div class="purchase__item">
+                                    <p class="purchase__text-to-pay">К оплате</p>
+                                    <p class="purchase__text-sum" id="out-first-sum"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="purchase__contact-wrap">
+                        <div class="purchase__contact">
+                            <div class="purchase__wrap-contact-details">
+                                <h3 class="purchase__title">Контактные данные</h3>
+                                <div class="purchase__item">
+                                    <label class="purchase__label" for="name">Имя</label>
+                                    <input class="purchase__input validate" type="text" id="name" maxlength="30" placeholder=" " pattern="[а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ -]{2,30}" required>
+                                </div>
+                                <div class="purchase__item">
+                                    <label class="purchase__label" for="surname">Фамилия</label>
+                                    <input class="purchase__input validate" type="text" id="surname" maxlength="30"  placeholder=" " pattern="[а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ -]{2,30}" required>
+                                </div>
+                                <div class="purchase__item">
+                                    <label class="purchase__label" for="phone">Номер телефона</label>
+                                    <input class="purchase__input validate" type="tel" id="phone" name="telephon" value="+380" minlength="13" maxlength="13" pattern="[0-9 +]{13,13}"  placeholder="+380 XX XXX XX XX"  title="+380 XX XXX XX XX" required>
+                                </div>
+                                <div class="purchase__item">
+                                    <label class="purchase__label" for="email">Email</label>
+                                    <input class="purchase__input validate" type="email" id="email" name="email" maxlength="100" placeholder=" " pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                        title="Пример правильного формата email:text@text.com" required>
+                                </div>
+                            </div>
+                            <div class="purchase__wrap-ways-payment">
+                                <h3 class="purchase__title">Способы оплаты</h3>
+                                <div class="purchase__item">
+                                    <label class="purchase__label" for="pay-method">Выберите способ оплаты</label>
+                                    <select class="purchase__select" name="select-pay" id="pay-method">
+                                        <option value="novapochta" selected="selected">Наложеный платеж “Новая почта”</option>
+                                        <option value="privat">Оплата на карту Приват Банк</option>
+                                        <option value="ukrpochta">Наложеный платеж “Укрпочта”</option>
+                                    </select>
+                                </div>
+                                <div class="purchase__item purchase__item--delivery-method" id="delivery-company">
+                                    <label class="purchase__label" for="delivery-method">Выберите способ доставки</label>
+                                    <select class="purchase__select" name="select-delivery" id="delivery-method">
+                                        <option value="delivery-company-novapocta" selected>“Новая почта”</option>
+                                        <option value="delivery-company-ukrpochta" >“Укрпочта”</option>
+                                    </select>
+                                </div>
+                                <div class="purchase__wrap-info-delivery" id="nova-pocta">
+                                    <div class="purchase__item">
+                                        <label class="purchase__label" for="city-novapochta">Укажите  город для достваки</label>
+                                        <input class="purchase__input validate" type="text" id="city-novapochta" maxlength="30" pattern="[а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ / -]{2,30}"  placeholder=" " required>
+                                    </div>
+                                    <div class="purchase__item">
+                                        <label class="purchase__label" for="department">Укажите отделение для доставки</label>
+                                        <input class="purchase__input validate" type="text" id="department" maxlength="10" pattern="[0-9]{1,10}" title="только цифры, например 25" placeholder="Только цифры" required>
+                                    </div>
+                                </div>
+                                <div class="purchase__wrap-address" id="ukr-pochta">
+                                    <div class="purchase__wrap-street-and-home">
+                                        <div class="purchase__item">
+                                            <label class="purchase__label" for="street">Улица</label>
+                                            <input class="purchase__input purchase__input--street validate" type="text" id="street" maxlength="30" placeholder=" " pattern="[а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ / -]{1,30}" required>
+                                        </div>
+                                        <div class="purchase__item">
+                                            <label class="purchase__label" for="house">Дом</label>
+                                            <input class="purchase__input purchase__input--home validate" type="text" id="house" maxlength="6" placeholder=" " pattern="[0-9 / -]{1,6}" required>
+                                        </div>
+                                        <div class="purchase__item">
+                                            <label class="purchase__label" for="flat">Кв</label >
+                                            <input class="purchase__input purchase__input--flat validate" type="text" id="flat" data-flat="true" placeholder=" " maxlength="6" pattern="[0-9 / -]{1,6}">
+                                        </div>
+                                    </div>
+                                    <div class="purchase__item">
+                                        <label class="purchase__label" for="city-ukrpochta">Город</label>
+                                        <input class="purchase__input validate" type="text" id="city-ukrpochta" maxlength="30" placeholder=" " pattern="[а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ / -]{2,35}" required>
+                                    </div>
+                                    <div class="purchase__wrap-regeon">
+                                        <div class="purchase__item">
+                                            <label class="purchase__label" for="region">Область</label>
+                                            <input class="purchase__input purchase__input--region validate" type="text" id="region" placeholder=" "  maxlength="30" pattern="[а-я А-Я а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]{1,30}" required>
+                                        </div>
+                                        <div class="purchase__item">
+                                            <label class="purchase__label" for="index">Индекс</label>
+                                            <input class="purchase__input purchase__input--index validate" type="text" id="index" placeholder=" " maxlength="5" pattern="[0-9]{1,5}" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="purchase__wrap-agreement" >
+                                <input class="purchase__input-agreement" type="checkbox" id="accept" required>
+                                <label class="purchase__label-agreement" for="accept">я принимаю условия пользовательского соглашения.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase__box-2">
+                    <p class="purchase__text-payment-method">Выбраный способ оплаты:<br><span id="output-method-pay"></span></p>
+                    <p class="purchase__text-delivery-method">Выбраный способ доставки:<br><span id="output-method-delivery"></span></p>
+                    <p class="purchase__text-info-delivery">*цена доставки согласно тарифам перевозчика</p>
+                    <div class="purchase__requisites" id ="requisites-for-pay">
+                        <p class="purchase__name-bank">Оплата производиться на карту <span>“Приват Банк”</span></p>
+                        <div class="purchase__wrap-card">
+                            <p class="purchase__number-card">номер карты:<br><span> 4666 4666 4777 4888</span></p>
+                            <button class="purchase__button-copy" aria-label="Копировать номер банковской карты в буфер обмена" title="Копировать номер банковской карты в буфер обмена" type="button"></button>
+                        </div>
+                        <p class="purchase__name-recipient">на имя:<span> Сєрик О.В.</span></p>
+                        <p class="purchase__text-bank-link">*что бы оплатить перейдите<br> по ссылке в
+                            <a class="purchase__bank-link" href="https://next.privat24.ua/" target="_blank">Приват24</a>
+                        </p>
+                    </div>
+                    <div class="purchase__wrap-sum"> 
+                        <p class="purchase__sum">К оплате: <span id="out-second-sum"></span></p>
+                        <p class="purchase__payment-made" id="info-pay">*после оплаты нажмите кнопку “Оплачено”</p>
+                    </div>
+                    <div class="purchase__wrap-button">
+                        <button class="button button--order-confirm" id="button-order-confirm" type="submit"></button>
+                    </div>
+                    <p class="purchase__text-other-buy">*Наш продукт также  можна купить на <br><a class="purchase__name-platform-link" href="https://www.olx.ua/" target="_blank">OLX</a> или <a  class="purchase__name-platform-link" href="https://skylots.org/" target="_blank">SkyLots</a></p> 
+                </div>
+            </div>
+        </form>
     </div>
-     <script type="text/javascript">
-          function testWebP(e){var s=new Image;s.onload=s.onerror=function(){e(2==s.height)},s.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}testWebP((function(e){1==e?document.querySelector("body").classList.add("webp"):document.querySelector("body").classList.add("no-webp")}));let listLink=document.querySelector(".menu__list"),bodyLocked=document.querySelector("body"),nav=document.querySelector(".menu"),lineHorizontal=document.querySelector(".button-burger__span"),toggleMenu=function(){lineHorizontal.classList.toggle("js-button-burger__span--active"),onJSmenu.classList.toggle("js-button-burger--active"),hiddenMenuOnJs.classList.toggle("js-menu__list--active"),bodyLocked.classList.toggle("locked"),nav.classList.toggle("js-menu--active")},remoweMenuActive=function(e){e.target.classList.contains("menu__link")&&hiddenMenuOnJs.classList.contains("js-menu__list--active")&&(lineHorizontal.classList.toggle("js-button-burger__span--active"),onJSmenu.classList.toggle("js-button-burger--active"),hiddenMenuOnJs.classList.toggle("js-menu__list--active"),bodyLocked.classList.toggle("locked"),nav.classList.toggle("js-menu--active"))};onJSmenu.addEventListener("click",toggleMenu),listLink.addEventListener("click",remoweMenuActive);let popup=document.querySelector(".popup"),buttonCloseModalCart=document.querySelector(".popup__button-close"),successfully=document.querySelector(".successfully"),buttonSubmitFormModalCart=document.querySelector(".popup__button-submit"),buttonReturnAfterSuccessfulSubmit=document.querySelector(".successfully__button"),backgroundModalCart=document.querySelector(".background-modal"),courses=document.querySelector(".courses__content"),greeting=document.querySelector(".greeting__list"),bodyLockedScroll=document.querySelector("body"),openModalCart=function(e){e.target.classList.contains("modal-show")&&(e.preventDefault(),popup.classList.add("js-popup"),backgroundModalCart.classList.add("js-background-modal"),bodyLockedScroll.classList.add("locked"))},closeModalCart=function(){!0===popup.classList.contains("js-popup")&&(popup.classList.remove("js-popup"),backgroundModalCart.classList.remove("js-background-modal"),bodyLockedScroll.classList.remove("locked"))},successfullySubmittedModalCart=function(){!0===popup.classList.contains("js-popup")&&(popup.classList.remove("js-popup"),successfully.classList.add("js-successfully"))},returnToHomePage=function(){!0===successfully.classList.contains("js-successfully")&&(successfully.classList.remove("js-successfully"),backgroundModalCart.classList.remove("js-background-modal"),bodyLockedScroll.classList.remove("locked"))};window.addEventListener("keydown",(function(e){"Escape"===e.key&&(!0===popup.classList.contains("js-popup")?(popup.classList.remove("js-popup"),backgroundModalCart.classList.remove("js-background-modal"),bodyLockedScroll.classList.remove("locked")):!0===successfully.classList.contains("js-successfully")&&(successfully.classList.remove("js-successfully"),backgroundModalCart.classList.remove("js-background-modal"),bodyLockedScroll.classList.remove("locked")))})),courses.addEventListener("click",openModalCart),greeting.addEventListener("click",openModalCart),buttonCloseModalCart.addEventListener("click",closeModalCart),buttonSubmitFormModalCart.addEventListener("click",successfullySubmittedModalCart),buttonReturnAfterSuccessfulSubmit.addEventListener("click",returnToHomePage);
-         function addCss() {
-    let style = document.querySelector('style');
-    let link = document.createElement('link');
-    link.rel = "stylesheet";
-    link.href = "css/swiper-bundle.min.css";
-    style.before(link);
-}
+    <div class="confirmed-purchase" id="confirmed">
+        <div class="confirmed-purchase__content">
+            <div class="confirmed-purchase__wrap-img">
+                <img class="confirmed-purchase__img" src="../img/confirm.svg" alt="Картинка" width="181" height="140">
+            </div>
+            <p class="confirmed-purchase__text confirmed-purchase__text--successfully">Вы успешно оформили заказ</p>
+            <p class="confirmed-purchase__text" id="cash-on-delivery">Спасибо за покупку, товар будет отправлен<br> на указаный адрес </p>
+            <p class="confirmed-purchase__text confirmed-purchase__text--pay-card" id="pay-before-delivery">Спасибо за покупку, товар будет отправлен на указаный адрес сразу после зачисления денежных средств</p>
+            <button class="button-close" id="button-close-successful-order-popup" aria-label="Кнопка закрытия формы заказа" type="button"></button>
+        </div>
+    </div>
 
-setTimeout(addCss, 2500);
+    <div class="scroll-to-top">
+        <button class="scroll-to-top__button hidden" id="scroll-to-top-btn" ></button>
+    </div>
 
-function addJs() {
-    let element = document.querySelector('.background-modal')
-    let script = document.createElement('script');
-    script.type = "text/javascript";
-    script.src = "js/swiper-bundle.min.js";
-    script.async = "async";
-    element.after(script); 
-}
-setTimeout(addJs, 2000);
-             
-    function init(){
-        let slider=document.querySelector(".swiper-container"),sliderCentering=document.querySelector(".swiper-centering"),sliderWrapper=document.querySelector(".swiper-wrapper"),sliderItem=document.querySelectorAll(".swiper-slide");sliderCentering.classList.remove("slider","slider--NoJS"),sliderWrapper.classList.remove("slider__wrapper","slider__wrapper--NoJS");for(let e=0;e<sliderItem.length;e++)sliderItem[e].classList.remove("slider__item","slider__item--NoJS");let mySwiper;function mobileSliderOn(){window.innerWidth<=1e3&&"false"==slider.dataset.mobile&&(mySwiper=new Swiper(slider,{slidesPerView:3,spaceBetween:20,loop:!0,pagination:{el:".swiper-pagination",type:"bullets",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:0},480:{slidesPerView:3,spaceBetween:20}}}),slider.dataset.mobile="true"),window.innerWidth>865&&(slider.dataset.mobile="false",slider.classList.contains("swiper-container-initialized")&&mySwiper.destroy())}mobileSliderOn(),window.addEventListener("resize",()=>{mobileSliderOn()}); 
-    }
-   setTimeout(init, 2800);
-    </script>
-   
+    <script src="./js/script.min.js"></script>
 </body>
-
-</html>
+</html>       
