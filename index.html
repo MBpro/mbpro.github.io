@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: //ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Двигунок</title>
+    <title>ДвигунОк</title>
+    <meta name="robots" content="noindex"><!--Удалить-->
+    <meta property="og:title" content="Тестер герметичности ГБЦ. Простой и надёжный способ, позволяет за короткое время с точностью 99,9% самостоятельно выявить повреждения прокладки ГБЦ, головки цилиндров или блока цилиндров,а в случае отсутствия повреждений сэкономить время и деньги на не нужном дорогостоящим ремонте. Незаменимый метод вовремя предпокупочной диагностики автомобиля" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mbpro.github.io" />
+    <meta property="og:image" content="../img/tekst_logo.svg" />
     <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
@@ -34,8 +39,8 @@
                     <li class="menu-list__item menu-list__item--header"><a href="#question" class="menu-list__link">Задать вопрос</a></li>
                 </ul>
                 <ul class="social-list social-list--header">
-                    <li class="social-list__item">
-                        <a class="social-list__link" href="#" aria-label="ссылка на фейсбук">
+                    <li class="social-list__item fb-share-button" data-href="https://mbpro.github.io" >
+                        <a class="social-list__link fb-xfbml-parse-ignore" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmbpro.github.io%2F&amp;src=sdkpreparse" aria-label="ссылка на фейсбук" target="_blank">
                             <img class="social-list__img" src="../img/facebook.svg" alt="" width="30" height="30">
                         </a>
                     </li>
@@ -77,7 +82,7 @@
             <div class="main__box">
                 <h1 class="main__title">Тестер герметичности ГБЦ</h1>
                 <div class="main__content">
-                    <p class="main__text">Простой и надёжный способ, позволяет за короткое время с точностью 99,9% самостоятельно выявить повреждения прокладки ГБЦ, головки цилиндров или блока цилиндров,а в случае отсутствия повреждений сэкономить время и  деньги на  не нужном дорогостоящим  ремонте. Незаменимый метод вовремя предпокупочной диагностики автомобиля</p>
+                    <p class="main__text">Простой, быстрый и надёжный способ, позволяет за короткое время с точностью 99,9% самостоятельно выявить повреждения прокладки ГБЦ, головки цилиндров или блока цилиндров,а в случае отсутствия повреждений сэкономить время и  деньги на  не нужном дорогостоящим  ремонте. Незаменимый метод диагностики перед покупкой автомобиля.</p>
                     <div class="main__wrap-img">
                         <img class="main__img" src="../img/main320@1x.jpg" alt="" width="300" height="256">
                     </div>  
@@ -362,18 +367,19 @@
             <li class="menu-list__item menu-list__item--footer"><a href="#question" class="menu-list__link menu-list__link--footer">Задать вопрос</a></li>
         </ul>    
         <ul class="social-list social-list--footer">
-            <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="ссылка на фейсбук">
+            <li class="social-list__item fb-share-button" data-href="https://mbpro.github.io" >
+                <a class="social-list__link fb-xfbml-parse-ignore" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmbpro.github.io%2F&amp;src=sdkpreparse" aria-label="ссылка на фейсбук" target="_blank">
                     <img class="social-list__img" src="../img/facebook.svg" alt="" width="40" height="40">
                 </a>
             </li>
+    
             <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="ссылка на вайбер">
+                <a class="social-list__link" id="viber_share" href="#" aria-label="ссылка на вайбер">
                     <img class="social-list__img" src="../img/viber.svg" alt="" width="40" height="40">
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="ссылка на телеграм">
+                <a class="social-list__link" href="https://telegram.me/share/url?url=https://mbpro.github.io/#" aria-label="ссылка на телеграм">
                     <img class="social-list__img" src="../img/telegram.svg" alt="" width="40" height="40">
                 </a>
             </li>
@@ -507,8 +513,8 @@
                     <div class="purchase__requisites" id ="requisites-for-pay">
                         <p class="purchase__name-bank">Оплата производиться на карту <span>“Приват Банк”</span></p>
                         <div class="purchase__wrap-card">
-                            <p class="purchase__number-card">номер карты:<br><span> 4666 4666 4777 4888</span></p>
-                            <button class="purchase__button-copy" aria-label="Копировать номер банковской карты в буфер обмена" title="Копировать номер банковской карты в буфер обмена" type="button"></button>
+                            <p class="purchase__number-card">номер карты:<br><span id="copy-text"> 4666 4666 4777 4888</span></p>
+                            <button class="purchase__button-copy" id="copy-button" aria-label="Копировать номер банковской карты в буфер обмена" title="Копировать номер банковской карты в буфер обмена" type="button"></button>
                         </div>
                         <p class="purchase__name-recipient">на имя:<span> Сєрик О.В.</span></p>
                         <p class="purchase__text-bank-link">*что бы оплатить перейдите<br> по ссылке в
@@ -544,5 +550,15 @@
     </div>
 
     <script src="./js/script.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="6XSEHduE"></script>
+    <script >
+        let link = document.querySelector('#viber_share');
+        if(link.hasAttribute(href)){
+            link.removeAttribute(href);
+        }
+        var text = "Check this out: ";
+            link.setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
+    </script>
 </body>
 </html>       

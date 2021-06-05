@@ -9800,6 +9800,9 @@ const regionUkrpochtaPopup = document.querySelector('#region');
 const indexUkrpochtaPopup = document.querySelector('#index'); 
 const inputPhone = document.querySelector('#phone');
 
+
+
+
 if (inputPhone.value === "+380") {
     inputPhone.classList.remove('validate');
 }
@@ -9864,7 +9867,6 @@ const defaultForm = function(){
             cityNovapochtaPopup.setAttribute('required','');
             departmentNovapochtaPopup.setAttribute('required','');
         }
-   
 
         if (streetUkrpochtaPopup.hasAttribute('required')) {
             streetUkrpochtaPopup.removeAttribute('required');
@@ -9873,15 +9875,6 @@ const defaultForm = function(){
             regionUkrpochtaPopup.removeAttribute('required');
             indexUkrpochtaPopup.removeAttribute('required');
         }
-        
-        let input = document.querySelectorAll('input');
-
-        for(let i = 0; i < input.length; i++){
-            if (input[i].hasAttribute('required')) {
-                console.log(input[i]);
-            } 
-        }
-        console.log('++++++++++++++++++++++++++++++++++++++++++++++++');
     } 
 }
 
@@ -9901,7 +9894,6 @@ const choiceOfPaymentMethod = function (){
         outputMethodPay.textContent = cashOnDeliveryNovaPochta;
         outputMethodDelivery.textContent = payBeforeDeliveryNovapochta;
 
-        
         if (!departmentNovapochtaPopup.hasAttribute('required')) {    
             cityNovapochtaPopup.setAttribute('required','');
             departmentNovapochtaPopup.setAttribute('required','');
@@ -9914,14 +9906,7 @@ const choiceOfPaymentMethod = function (){
             regionUkrpochtaPopup.removeAttribute('required');
             indexUkrpochtaPopup.removeAttribute('required');
         }
-        let input = document.querySelectorAll('input');
-        for(let i = 0; i < input.length; i++){
-            if (input[i].hasAttribute('required')) {
-                console.log(input[i]);
-            }
-        }
-
-        console.log('++++++++++++++++++++++++++++++++++++++++++++++++');
+        
         return 
     }
 
@@ -9963,14 +9948,6 @@ const choiceOfPaymentMethod = function (){
             indexUkrpochtaPopup.setAttribute('required', '');
         }
 
-        let input = document.querySelectorAll('input');
-        for(let i = 0; i < input.length; i++){
-            if (input[i].hasAttribute('required')) {
-                console.log(input[i]);
-            }
-        }
-
-        console.log('++++++++++++++++++++++++++++++++++++++++++++++++');
         return  
     } 
 
@@ -9996,14 +9973,6 @@ const choiceOfPaymentMethod = function (){
             regionUkrpochtaPopup.setAttribute('required', '');
             indexUkrpochtaPopup.setAttribute('required', '');
         }
-        let input = document.querySelectorAll('input');
-        for(let i = 0; i < input.length; i++){
-            if (input[i].hasAttribute('required')) {
-                console.log(input[i]);
-            }
-        }
-
-        console.log('++++++++++++++++++++++++++++++++++++++++++++++++');
         return   
     }
 
@@ -10029,15 +9998,6 @@ const choiceOfPaymentMethod = function (){
             regionUkrpochtaPopup.removeAttribute('required');
             indexUkrpochtaPopup.removeAttribute('required');
         }
-
-        let input = document.querySelectorAll('input');
-        for(let i = 0; i < input.length; i++){
-            if (input[i].hasAttribute('required')) {
-                console.log(input[i]);
-            }
-        }
-
-        console.log('++++++++++++++++++++++++++++++++++++++++++++++++');
         return   
     }
 }
@@ -10072,6 +10032,13 @@ window.addEventListener('keydown', function (event) { //close popup pressed butt
     }
 })
 
+function copy(){
+    const copyText = document.querySelector('#copy-text');
+    navigator.clipboard.writeText(copyText.textContent);
+}
+
+
+
 payMethod.addEventListener('change', choiceOfPaymentMethod);
 payMethod.addEventListener('change', defaultForm);
 deliveryMethod.addEventListener('change', choiceOfPaymentMethod);
@@ -10087,12 +10054,14 @@ quantityInput.addEventListener('change', quantitySubstract);
 formPopup.addEventListener('sumbit', onSuccessfulOrderPopup);
 inputPhone.addEventListener('blur', AddClassInputPhone);  
 
-flatUkrpochtaPopup.addEventListener('blur', AddClassInputFlat);  
+flatUkrpochtaPopup.addEventListener('blur', AddClassInputFlat); 
+document.querySelector('#copy-button').addEventListener('click', copy);
+
+
 
 }
 
 popup();
-
 ;
 function validationFormPopup(){
     //Personal Information
@@ -10152,6 +10121,7 @@ window.addEventListener('scroll',function(){
     scrollToTopBtn.classList.add('hidden');
   }
 })
+
 scrollToTopBtn.addEventListener('click', function(){
   window.scrollTo(0, 0);
 });
