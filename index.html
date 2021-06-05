@@ -374,7 +374,7 @@
             </li>
     
             <li class="social-list__item">
-                <a class="social-list__link" id="viber_share" href="#" aria-label="ссылка на вайбер">
+                <a class="social-list__link" id="viber_share"  aria-label="ссылка на вайбер">
                     <img class="social-list__img" src="../img/viber.svg" alt="" width="40" height="40">
                 </a>
             </li>
@@ -552,13 +552,12 @@
     <script src="./js/script.min.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="6XSEHduE"></script>
-    <script >
-        let link = document.querySelector('#viber_share');
-        if(link.hasAttribute(href)){
-            link.removeAttribute(href);
-        }
+    <a id="viber_share">Click</a>
+    <script>
+        var buttonID = "viber_share";
         var text = "Check this out: ";
-            link.setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
+        document.getElementById(buttonID)
+            .setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
     </script>
 </body>
 </html>       
