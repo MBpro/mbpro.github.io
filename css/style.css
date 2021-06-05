@@ -4121,7 +4121,7 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
-    overflow: scroll;
+    overflow: auto;
   }
 
   .menu-list--header {
