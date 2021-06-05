@@ -45,12 +45,12 @@
                         </a>
                     </li>
                     <li class="social-list__item">
-                        <a class="social-list__link" href="#" aria-label="ссылка на вайбер">
+                        <a class="social-list__link viber_share" href="#" aria-label="ссылка на вайбер">
                             <img class="social-list__img" src="../img/viber.svg" alt="" width="30" height="30">
                         </a>
                     </li>
                     <li class="social-list__item">
-                        <a class="social-list__link" href="#" aria-label="ссылка на телеграм">
+                        <a class="social-list__link" href="https://telegram.me/share/url?url=https://mbpro.github.io/#" aria-label="ссылка на телеграм">
                             <img class="social-list__img" src="../img/telegram.svg" alt="" width="30" height="30">
                         </a>
                     </li>
@@ -372,9 +372,9 @@
                     <img class="social-list__img" src="../img/facebook.svg" alt="" width="40" height="40">
                 </a>
             </li>
-    
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="6XSEHduE"></script>
             <li class="social-list__item">
-                <a class="social-list__link" id="viber_share" href="#"  aria-label="ссылка на вайбер">
+                <a class="social-list__link viber_share" href="#"  aria-label="ссылка на вайбер">
                     <img class="social-list__img" src="../img/viber.svg" alt="" width="40" height="40">
                 </a>
             </li>
@@ -549,14 +549,12 @@
         <button class="scroll-to-top__button hidden" id="scroll-to-top-btn" ></button>
     </div>
 
-    <script src="./js/script.min.js"></script>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="6XSEHduE"></script>
+    <script async src="./js/script.min.js"></script>
     <script>
-        var buttonID = "viber_share";
-        var text = "";
-        document.getElementById(buttonID)
-            .setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)));
-    </script>
+        let linkViberButton = document.querySelectorAll('.viber_share');
+        for(let i = 0; i < linkViberButton.length; i++){
+            linkViberButton[i].setAttribute('href', "https://3p3x.adj.st/?adjust_t=u783g1_kw9yml&adjust_fallback=https%3A%2F%2Fwww.viber.com%2F%3Futm_source%3DPartner%26utm_medium%3DSharebutton%26utm_campaign%3DDefualt&adjust_campaign=Sharebutton&adjust_deeplink=" + encodeURIComponent("viber://forward?text=" + encodeURIComponent(window.location.href)));
+        }
+        </script>
 </body>
 </html>       

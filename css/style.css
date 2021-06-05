@@ -4109,7 +4109,7 @@ button.swiper-pagination-bullet {
     padding: 9rem 0 0 2.5rem;
     border-radius: 0 2rem 2rem 0;
     background-color: #ffffff;
-    overflow: scroll;
+    overflow: hidden;
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
@@ -4121,6 +4121,7 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
+    overflow: scroll;
   }
 
   .menu-list--header {
