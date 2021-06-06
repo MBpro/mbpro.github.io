@@ -9800,9 +9800,6 @@ const regionUkrpochtaPopup = document.querySelector('#region');
 const indexUkrpochtaPopup = document.querySelector('#index'); 
 const inputPhone = document.querySelector('#phone');
 
-
-
-
 if (inputPhone.value === "+380") {
     inputPhone.classList.remove('validate');
 }
@@ -9824,7 +9821,6 @@ function AddClassInputFlat(){
         flatUkrpochtaPopup.classList.remove('validate');
     }
 }
-
 
 outPrice.textContent = price + ' грн';
 outMainPrice.textContent = price; 
@@ -10037,17 +10033,23 @@ function copy(){
     navigator.clipboard.writeText(copyText.textContent);
 }
 
-
-
 payMethod.addEventListener('change', choiceOfPaymentMethod);
 payMethod.addEventListener('change', defaultForm);
 deliveryMethod.addEventListener('change', choiceOfPaymentMethod);
+
 buttonPay.addEventListener('click', onPopup);
+buttonPay.addEventListener('touchstart', onPopup);
 buttonClosePopup.addEventListener('click', offPopup);
+buttonClosePopup.addEventListener('touchstart', offPopup);
+
 buttonCloseSuccessfulOrderPopup.addEventListener('click', offSuccessfulOrderPopup);
+buttonCloseSuccessfulOrderPopup.addEventListener('touchstart', offSuccessfulOrderPopup);
 
 buttonAddQuantity.addEventListener('click', quantityAdd);
+buttonAddQuantity.addEventListener('touchstart', quantityAdd);
 buttonSubstractQuantity.addEventListener('click', quantitySubstract);
+buttonSubstractQuantity.addEventListener('touchstart', quantitySubstract);
+
 quantityInput.addEventListener('change', quantityAdd);
 quantityInput.addEventListener('change', quantitySubstract);
 
@@ -10055,10 +10057,9 @@ formPopup.addEventListener('sumbit', onSuccessfulOrderPopup);
 inputPhone.addEventListener('blur', AddClassInputPhone);  
 
 flatUkrpochtaPopup.addEventListener('blur', AddClassInputFlat); 
+
 document.querySelector('#copy-button').addEventListener('click', copy);
-
-
-
+document.querySelector('#copy-button').addEventListener('touchstart', copy);
 }
 
 popup();
