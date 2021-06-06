@@ -9799,6 +9799,7 @@ const cityUkrpochtaPopup = document.querySelector('#city-ukrpochta');
 const regionUkrpochtaPopup = document.querySelector('#region');
 const indexUkrpochtaPopup = document.querySelector('#index'); 
 const inputPhone = document.querySelector('#phone');
+const copyButton = document.querySelector('#copy-button');
 
 if (inputPhone.value === "+380") {
     inputPhone.classList.remove('validate');
@@ -10058,8 +10059,8 @@ inputPhone.addEventListener('blur', AddClassInputPhone);
 
 flatUkrpochtaPopup.addEventListener('blur', AddClassInputFlat); 
 
-document.querySelector('#copy-button').addEventListener('click', copy);
-document.querySelector('#copy-button').addEventListener('touchstart', copy);
+copyButton.addEventListener('click', copy);
+copyButton.addEventListener('touchstart', copy);
 }
 
 popup();
