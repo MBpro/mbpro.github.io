@@ -9995,8 +9995,14 @@ const choiceOfPaymentMethod = function (){
     }
 }
 
-const onPopup = function(){
-    //event.preventDefault();
+const onPopup = function(event){
+    event.preventDefault();
+    popup.classList.add('js-purchase');
+    lockScroll.classList.add('js-lock-scroll');
+}
+
+const onPopupIOS = function(event){
+    event.preventDefault();
     popup.classList.add('js-purchase');
     lockScroll.classList.add('js-lock-scroll');
 }
@@ -10035,7 +10041,7 @@ payMethod.addEventListener('change', defaultForm);
 deliveryMethod.addEventListener('change', choiceOfPaymentMethod);
 
 buttonPay.addEventListener('click', onPopup);
-//buttonPay.addEventListener('touchstart', onPopup);
+buttonPay.addEventListener('touchstart', onPopupIOS);
 buttonClosePopup.addEventListener('click', offPopup);
 //buttonClosePopup.addEventListener('touchstart', offPopup);
 
