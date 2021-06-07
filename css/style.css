@@ -1095,6 +1095,7 @@ body {
   display: block;
   border-radius: 5rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--sumbit {
