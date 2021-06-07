@@ -9995,8 +9995,8 @@ const choiceOfPaymentMethod = function (){
     }
 }
 
-const onPopup = function(event){
-    event.preventDefault();
+const onPopup = function(){
+    //event.preventDefault();
     popup.classList.add('js-purchase');
     lockScroll.classList.add('js-lock-scroll');
 }
