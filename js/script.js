@@ -10001,7 +10001,8 @@ const onPopup = function(event){
     lockScroll.classList.add('js-lock-scroll');
 }
 
-const onPopupIOS = function(){
+const onPopupIOS = function(event){
+    event.preventDefault();
     popup.classList.add('js-purchase');
     lockScroll.classList.add('js-lock-scroll');
 }
