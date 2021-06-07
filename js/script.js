@@ -9748,10 +9748,6 @@ MenuList.addEventListener('click', remoweMenuActiveAfterClickLink);
 
 
 ;
-
-
-function popup(){
-
 const payMethod = document.querySelector('#pay-method');
 const deliveryMethod = document.querySelector('#delivery-method');
 const buttonAddQuantity = document.querySelector('#button-add-quantity');
@@ -10039,17 +10035,17 @@ payMethod.addEventListener('change', defaultForm);
 deliveryMethod.addEventListener('change', choiceOfPaymentMethod);
 
 buttonPay.addEventListener('click', onPopup);
-buttonPay.addEventListener('touchstart', onPopup);
+//buttonPay.addEventListener('touchstart', onPopup);
 buttonClosePopup.addEventListener('click', offPopup);
-buttonClosePopup.addEventListener('touchstart', offPopup);
+//buttonClosePopup.addEventListener('touchstart', offPopup);
 
 buttonCloseSuccessfulOrderPopup.addEventListener('click', offSuccessfulOrderPopup);
-buttonCloseSuccessfulOrderPopup.addEventListener('touchstart', offSuccessfulOrderPopup);
+//buttonCloseSuccessfulOrderPopup.addEventListener('touchstart', offSuccessfulOrderPopup);
 
 buttonAddQuantity.addEventListener('click', quantityAdd);
-buttonAddQuantity.addEventListener('touchstart', quantityAdd);
+//buttonAddQuantity.addEventListener('touchstart', quantityAdd);
 buttonSubstractQuantity.addEventListener('click', quantitySubstract);
-buttonSubstractQuantity.addEventListener('touchstart', quantitySubstract);
+//buttonSubstractQuantity.addEventListener('touchstart', quantitySubstract);
 
 quantityInput.addEventListener('change', quantityAdd);
 quantityInput.addEventListener('change', quantitySubstract);
@@ -10060,12 +10056,12 @@ inputPhone.addEventListener('blur', AddClassInputPhone);
 flatUkrpochtaPopup.addEventListener('blur', AddClassInputFlat); 
 
 copyButton.addEventListener('click', copy);
-copyButton.addEventListener('touchstart', copy);
-}
+//copyButton.addEventListener('touchstart', copy);
 
-popup();
+
+
 ;
-function validationFormPopup(){
+/*function validationFormPopup(){
     //Personal Information
     const namePopup = document.querySelector('#name')
     const phoneNumberPopup = document.querySelector('#phone');
@@ -10085,30 +10081,28 @@ function validationFormPopup(){
     //Form popup
     const formPopup = document.querySelector('#form-popup');
 }
-validationFormPopup();
+validationFormPopup();*/
 
 ;
-function questionForm(){
 
-    const inputTheme = document.querySelector('#theme');
+const inputTheme = document.querySelector('#theme');
 
-    if (inputTheme.value === '') {
-        inputTheme.classList.remove('validate');
-    }
-
-    function AddClassInputTheme(){
-     
-        if (inputTheme.value !== '' && !inputTheme.classList.contains('validate')) {
-            inputTheme.classList.add('validate');
-        }else{
-            inputTheme.classList.remove('validate');
-        }
-    }
-
-    inputTheme.addEventListener('blur',  AddClassInputTheme);
+if (inputTheme.value === '') {
+    inputTheme.classList.remove('validate');
 }
 
-questionForm();
+function AddClassInputTheme(){
+     
+    if (inputTheme.value !== '' && !inputTheme.classList.contains('validate')) {
+        inputTheme.classList.add('validate');
+    }else{
+        inputTheme.classList.remove('validate');
+    }
+}
+
+inputTheme.addEventListener('blur',  AddClassInputTheme);
+
+
 
 
 ;
