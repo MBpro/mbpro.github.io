@@ -9799,6 +9799,7 @@ const regionUkrpochtaPopup = document.querySelector('#region');
 const indexUkrpochtaPopup = document.querySelector('#index'); 
 const inputPhone = document.querySelector('#phone');
 const copyButton = document.querySelector('#copy-button');
+const scrollToTopBtn = document.querySelector('#scroll-to-top-btn');
 
 if (inputPhone.value === "+380") {
     inputPhone.classList.remove('validate');
@@ -10002,11 +10003,16 @@ const onPopup = function(event){
     event.preventDefault();
     popup.classList.add('js-purchase');
     lockScroll.classList.add('js-lock-scroll');
+    if ( !scrollToTopBtn.classList.contains('hidden')) {
+        scrollToTopBtn.classList.add('hidden');
+    }
+   
 }
 
 const offPopup = function(){
     popup.classList.remove('js-purchase');
     lockScroll.classList.remove('js-lock-scroll');
+    scrollToTopBtn.classList.remove('hidden');
 }
 
 const onSuccessfulOrderPopup = function(){
@@ -10109,7 +10115,7 @@ inputTheme.addEventListener('blur',  AddClassInputTheme);
 
 
 
-const scrollToTopBtn = document.querySelector('#scroll-to-top-btn');
+//const scrollToTopBtn = document.querySelector('#scroll-to-top-btn');
 const body = document.querySelector('body');
 
 function showButton(){
