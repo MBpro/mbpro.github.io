@@ -17,7 +17,7 @@ testWebP(function (support) {
     } else {
         document.querySelector('body').classList.add('no-webp');
     }
-});;
+});
 /**
  * Swiper 6.5.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -9643,7 +9643,7 @@ testWebP(function (support) {
 
 })));
 //# sourceMappingURL=swiper-bundle.js.map
-;
+
 const slider = document.querySelector('.swiper-container');
 
 let mySwiper;
@@ -9702,7 +9702,7 @@ window.addEventListener('resize', () => {
     mobileSliderOn();
 })
 
-;
+
 const burgerOpen = document.querySelector('#burger-open');
 const burgerClose = document.querySelector('#burger-close');
 const lineDecoration = document.querySelector('.burger__line');
@@ -9742,12 +9742,15 @@ burgerOpen.addEventListener('click', openMenu);
 burgerClose.addEventListener('click', closeMenu);
 MenuList.addEventListener('click', remoweMenuActiveAfterClickLink);
 
+alert('Mobile menu test completed successfully, press ok to continue');
 
 
 
 
 
-;
+
+
+alert('Start test popup completed successfully, press ok to continue');
 const payMethod = document.querySelector('#pay-method');
 const deliveryMethod = document.querySelector('#delivery-method');
 const buttonAddQuantity = document.querySelector('#button-add-quantity');
@@ -10001,12 +10004,6 @@ const onPopup = function(event){
     lockScroll.classList.add('js-lock-scroll');
 }
 
-const onPopupIOS = function(event){
-    event.preventDefault();
-    popup.classList.add('js-purchase');
-    lockScroll.classList.add('js-lock-scroll');
-}
-
 const offPopup = function(){
     popup.classList.remove('js-purchase');
     lockScroll.classList.remove('js-lock-scroll');
@@ -10041,7 +10038,6 @@ payMethod.addEventListener('change', defaultForm);
 deliveryMethod.addEventListener('change', choiceOfPaymentMethod);
 
 buttonPay.addEventListener('click', onPopup);
-buttonPay.addEventListener('touchstart', onPopupIOS);
 buttonClosePopup.addEventListener('click', offPopup);
 //buttonClosePopup.addEventListener('touchstart', offPopup);
 
@@ -10064,9 +10060,9 @@ flatUkrpochtaPopup.addEventListener('blur', AddClassInputFlat);
 copyButton.addEventListener('click', copy);
 //copyButton.addEventListener('touchstart', copy);
 
+alert('End test popup completed successfully, press ok to continue');
 
 
-;
 /*function validationFormPopup(){
     //Personal Information
     const namePopup = document.querySelector('#name')
@@ -10089,7 +10085,7 @@ copyButton.addEventListener('click', copy);
 }
 validationFormPopup();*/
 
-;
+
 
 const inputTheme = document.querySelector('#theme');
 
@@ -10111,7 +10107,7 @@ inputTheme.addEventListener('blur',  AddClassInputTheme);
 
 
 
-;
+
 
 const scrollToTopBtn = document.querySelector('#scroll-to-top-btn');
 const body = document.querySelector('body');
@@ -10132,7 +10128,7 @@ window.addEventListener('scroll',showButton);
 scrollToTopBtn.addEventListener('click',scrollToTop); 
 
 
-;
+
 
 
 
