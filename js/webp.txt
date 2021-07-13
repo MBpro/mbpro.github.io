@@ -1,0 +1,42 @@
+
+"use strict";
+
+function testWebP(callback) {
+
+    var webP = new Image();
+    webP.onload = webP.onerror = function () {
+        callback(webP.height == 2);
+    };
+    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+}
+
+testWebP(function (support) {
+
+    if (support == false) {
+
+	    document.querySelector('body').classList.add('no-webp');
+	    let images = document.querySelectorAll('img');
+
+	    for( let i = 0; i < images.length; i++){
+
+    	    images[i].src = images[i].src.replace("webp", "jpg");
+            
+            if (images[i].hasAttribute('data-image-png', 'true')){
+                images[i].src = images[i].src.replace("webp", "png");
+            } 
+
+    	    for(let i = 0; i < images.length; i++){
+
+        	    images[i].srcset = images[i].srcset.replace("webp", "jpg");
+
+                if (images[i].hasAttribute('data-image-png', 'true')){
+                    images[i].srcset = images[i].srcset.replace("webp", "png");
+                }  
+    	    }
+    		    console.log(images[i]);
+    	    }
+		   
+    } else {
+    	document.querySelector('body').classList.add('webp');
+    }
+});
