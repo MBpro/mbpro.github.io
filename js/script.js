@@ -74,7 +74,7 @@ const payBeforeDeliveryNovapochta = ' "Новая почта"';
 const payPrivatBank = ' Оплата на карту "Приват Банк"'
 const cashOnDeliveryNovaPochta = ' Наложеный платеж "Новая почта"';
 const cashOnDeliveryUkrpochta = ' Наложеный платеж "Укрпочта"'; 
-let price = 190;
+let price = 230;
 const outMainPrice = document.querySelector('#out-main-price');
 const outPrice = document.querySelector('#out-price');
 let outFirstSum = document.querySelector('#out-first-sum');
@@ -481,6 +481,51 @@ function scrollToTop(){
 
 window.addEventListener('scroll',showButton);
 scrollToTopBtn.addEventListener('click',scrollToTop); 
+
+
+
+const spamComment = document.querySelector('#sp-comment');
+const spamQuestion = document.querySelector('#sp-question');
+const spamPurchase = document.querySelector('#sp-purchase');
+
+
+function spamChekedComment(){
+    const btnComment = document.querySelector('#btn-comment');
+    if(spamComment.value.length >= 1) btnComment.parentNode.removeChild(btnComment);
+}
+
+function spamChekedQuestion(){
+    const btnQuestion = document.querySelector('#btn-question');
+    if(spamQuestion.value.length >= 1) btnQuestion.parentNode.removeChild(btnQuestion);
+}
+
+function spamChekedPurchase(){
+    const btnPurchase = document.querySelector('#button-order-confirm');
+    if(spamPurchase.value.length >= 1) btnPurchase.parentNode.removeChild(btnPurchase);  
+}
+
+spamComment.addEventListener('blur', spamChekedComment);
+spamQuestion.addEventListener('blur', spamChekedQuestion);
+spamPurchase.addEventListener('blur', spamChekedPurchase);
+
+const linkAccept = document.querySelector('#link-accept');
+const popupAccept = document.querySelector('#terms-of-service-accept');
+const btnPopup = document.querySelector('#button-terms-of-service');
+const linkFooter = document.querySelector('#link-footer');
+
+
+function popupAcceptOn(e){
+    e.preventDefault();
+    popupAccept.classList.add('js-terms-of-service');    
+}
+
+function popupAcceptClose(){
+    popupAccept.classList.remove('js-terms-of-service');  
+}
+
+linkAccept.addEventListener('click', popupAcceptOn); 
+linkFooter.addEventListener('click', popupAcceptOn);
+btnPopup.addEventListener('click', popupAcceptClose);
 
 
 
