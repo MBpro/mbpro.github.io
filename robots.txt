@@ -1,0 +1,7 @@
+User-agent:*
+Disallow:/fonts/
+Disallow:/*.php$
+Disallow:/js/swiper-bundle-min.js
+Disallow:/js/script.js
+
+
